@@ -17,6 +17,7 @@ function ProductList() {
               <Link to={`/products/id/${product.ID}`} className="product-link text-blue-400">
                 See More...
               </Link>
+              12312313221
             </div>
           </div>
         ))}
