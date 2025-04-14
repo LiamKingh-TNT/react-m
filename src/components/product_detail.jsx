@@ -9,7 +9,7 @@ function ProductDetail({ product }) {  // 解構 props 取得 product
   const [qty, setQty] = useState(product.stock > 0? 1: 0);
 
   return (
-    
+   
     <div className="pt-4 h-fit w-fit px-3 lg:px-4 text-white grid grid-cols-2 text-left gap-4">
       <img src={product.cover} className="" alt={product.title} />
       <div className="text-left"> 
