@@ -10,6 +10,7 @@ function MainPage() {
       <Header/>
       <CartSummery />
       <ProductList />
+      <img src="./images/home_cover.png" className="fixed z-0 top-0"/>
       <Footer />
     </div>
   )
