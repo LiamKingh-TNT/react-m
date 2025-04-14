@@ -1,0 +1,59 @@
+
+@import "tailwindcss";
+html,
+body {
+   font-size: 16px;
+   line-height: 1.6;
+   background-color: rgb(64, 64, 66);
+   font-family: 'Jersey 25','Courier New', Courier, monospace;
+}
+
+.main-layout{
+  width: 100%;
+  background-color: rgb(64, 64, 66);
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: 
+    'header'
+    'content'
+    'footer'
+  ;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+}
+
+.header,.footer{
+  border-right: 6px;
+  border-left: 6px;
+  border-top: 0;
+  border-style:  solid;
+  border-color:  transparent;
+  background-image: linear-gradient(black, black), linear-gradient(-180.5deg, #A6CBBC, #748C89, #41585D, #103031);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.header{
+  grid-area: header;
+}
+
+.nav-underline-center {
+  @apply relative after:content-[''] 
+        after:absolute 
+        after:left-1/2 
+        after:-bottom-0
+        after:h-[4px] 
+        after:w-0 
+        after:bg-[#C71919]
+        after:transition-all 
+        after:duration-300
+        after:-translate-x-1/2 
+        hover:after:w-full;
+}
+.content{
+  grid-area: content;
+  padding-top: 100px;
+}
+
+.footer{
+  grid-area: footer;
+}
