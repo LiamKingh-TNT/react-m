@@ -46,7 +46,7 @@ function ProductDetail({ product }) {  // 解構 props 取得 product
           <span className="font-bold">Total Price</span>:{product.price * qty}
         </p>
         <br/>
-        <Link to="/" className="text-blue-400">
+        <Link to="/" className="text-blue-400 select-none">
             Back
         </Link>
       </div>

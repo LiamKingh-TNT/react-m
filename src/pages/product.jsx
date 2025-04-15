@@ -14,7 +14,7 @@ function ProductItem() {
 
   return (
     <div className="container mx-auto main-layout">
-      <Header title="Book Details" />
+      <Header/>
       {product ? (
         <ProductDetail product={product} className="content" />
       ) : (
