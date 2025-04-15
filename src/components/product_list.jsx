@@ -1,4 +1,4 @@
-import products from "../assets/books.json";
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
 import { useTranslation } from 'react-i18next'
 
@@ -10,36 +10,22 @@ function ProductList() {
             <p className="text-[#3E2F2F] z-50 mt-[-10vh] title overflow-visible text-[8vw] font-extrabold" data-storke={lang('title2')}>{lang('title2')}</p>
           </div>
           <div className="background pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto backdrop-blur-md shadow-md md:w-[90vw] overflow-hidden">
-
-
-          
-            <div className="relative z-[1] grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
-              {products.map(product => (
-                <div key={product.ID} className="pt-4 h-fit px-3 md:px-4 text-white grid grid-cols-2 text-left gap-4">
-                  <img src={product.cover} className=""/>
-                  <div className="text-left"> 
-                    <p className="text-[15px]">Title : {product.title}</p>
-                    <p className="text-[12px]">Author : {product.author}</p>
-                      <p className="text-[12px]">Summary :</p>
-                      <p className="text-[8px]">{tuncateText(product.summary, 80)}</p>
-                    <p className="text-[12px]">Price: {product.price}</p>
-                    <p className="text-[12px]">Stock: {product.stock}</p>
-                    <Link to={`/products/id/${product.ID}`} className="product-link text-blue-400">
-                      See More...
-                    </Link>
-                  </div>
-                </div>
-              ))}
+            <div className="brief_desc w-full h-[80vh]">
+              <img
+                src="/images/Lords.png"
+                alt="masked"
+                className="h-full w-full object-contain"
+                style={{
+                  maskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 75%)',
+                  WebkitMaskImage: 'radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%)'
+                }}
+              />
             </div>
           </div>
-          
         </div>
       
   );
 }
-function tuncateText(text,length)
-{
-  return text.length > length ? text.substring(0, length) + "..." : text;
-}
+
 
 export default ProductList;
