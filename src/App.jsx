@@ -1,6 +1,7 @@
 
 import './App.css'
 import Home from "./pages/home"
+import Faction from './pages/faction';
 import Product from './pages/product';
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
 
@@ -10,9 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='products'>
-          <Route path='category/:categoryName' element={<Home/>}/>
-          <Route path='id/:productId' element={<Product/>}/> 
+        <Route path='faction' element={<Faction/>}>
         </Route>
       </Routes>
        
