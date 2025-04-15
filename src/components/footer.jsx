@@ -23,7 +23,7 @@ function Footer() {
             <Link to="/products/id/0"><img src="/images/twitter.png" className="w-[30px] h-auto md:w-[40px]"/></Link>
             <Link to="/products/id/0"><img src="/images/instagram.png" className="w-[30px] h-auto md:w-[40px]"/></Link>
           </div>
-          <p className="text-[#C4C4C4] text-[4vw] md:text-[1vw]">Copyright © 2025 Liam & EXE. All rights reserved.</p>
+          <p className="text-[#C4C4C4] text-[4vw] md:text-[1vw]">Copyright © 2025 Liam & XEX. All rights reserved.</p>
           
         </footer>
     )

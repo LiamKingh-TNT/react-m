@@ -6,5 +6,65 @@
       "component": "Game Component",
       "rules": "Game Rules",
       "language": "Language: English"
-    }
+    },
+    "factions": [
+        {
+            "name":"",
+            "traits": [
+                {
+                    "name":"",
+                    "effects": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ]
+                }
+            ],
+            "soldiers": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "cost":"",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "lords": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "cards": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":0
+                }
+            ]
+        }
+    ]
   }
