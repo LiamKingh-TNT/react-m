@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next'
@@ -18,7 +17,7 @@ function Header() {
             <img src="/images/main_icon.png" alt="main_icon" className="w-40 h-40 z-40"/>
             <nav className="hidden lg:flex gap-8 text-white text-[20px] font-semibold ">
               <Link to="/products/id/0" className="nav-underline-center select-none">{lang('menu.background')}</Link>
-              <Link to="/products/id/1" className="nav-underline-center select-none">{lang('menu.component')}</Link>
+              <Link to="/faction" className="nav-underline-center select-none">{lang('menu.component')}</Link>
               <Link to="/products/id/2" className="nav-underline-center select-none">{lang('menu.rules')}</Link>
             </nav>
             
