@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "bootstrap": "^5.3.3",
+    "gsap": "^3.12.7",
     "i18next": "^24.2.3",
     "lodash": "^4.17.21",
     "react": "^19.0.0",
