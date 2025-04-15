@@ -1,11 +1,13 @@
 import products from "../assets/books.json";
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
+import { useTranslation } from 'react-i18next'
 
 function ProductList() {
+  const { t:lang } = useTranslation()
   return (
         <div className="content relative z-20 ">
           <div className="flex items-center justify-center h-screen">
-            <p className="text-[#3E2F2F] text-[30px] z-50 mt-[-10vh] title overflow-visible md:text-[120px]" data-storke="-The Throne of Delusion-">-The Throne of Delusion-</p>
+            <p className="text-[#3E2F2F] z-50 mt-[-10vh] title overflow-visible text-[8vw] font-extrabold" data-storke={lang('title2')}>{lang('title2')}</p>
           </div>
           <div className="background pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto backdrop-blur-md shadow-md md:w-[90vw] overflow-hidden">
 
