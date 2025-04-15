@@ -21,7 +21,7 @@ body {
 }
 .title::before {
   position: absolute;
-  z-index: -1;
+  z-index: 10;
   background: linear-gradient(-185deg, #B5D7D7 0%, #96B3B8 10%, #778F98 30%, #324044 95%);
   background-size: 200% 200%;
   -webkit-background-clip: text;
