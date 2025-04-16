@@ -17,7 +17,7 @@ function Filter(){
                             backgroundColor: 'rgba(99, 99, 99, 0.41)'
                         }}>
                         <img src={faction.img} alt={faction.name} className="w-full h-64 object-contain mb-4 rounded-md" />
-                        <h2 className="text-[#B5D7D7] text-3xl text-center">{lang(faction.name)}</h2>
+                        <h2 className="text-white text-3xl text-center">{lang(faction.name)}</h2>
                     </div>
                 ))}
             </div>
