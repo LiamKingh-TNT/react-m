@@ -1,0 +1,60 @@
+{
+    "img":"/images/alliance_of_ascendants.png",
+    "name":"factions.alliance_of_ascendants.name",
+    "groupe":"selenyx",
+    "traits": [
+        {
+            "name":"",
+            "effects": [
+                {
+                    "name":"",
+                    "desc":""
+                }
+            ]
+        }
+    ],
+    "soldiers": [
+        {
+            "name":"",
+            "def":0,
+            "hp":0,
+            "dex":0,
+            "size":"",
+            "type":"",
+            "cost":"",
+            "skills": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":""
+                }
+            ],
+            "story":""
+        }
+    ],
+    "lords": [
+        {
+            "name":"",
+            "def":0,
+            "hp":0,
+            "dex":0,
+            "size":"",
+            "type":"",
+            "skills":[
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":""
+                }
+            ],
+            "story":""
+        }
+    ],
+    "cards": [
+{
+    "name":"",
+            "desc":"",
+            "cost":0
+        }
+    ]
+}
