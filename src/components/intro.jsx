@@ -10,8 +10,8 @@ function Intro() {
 
   const prev = () => setIndex((index - 1 + factions.length) % factions.length)
   const next = () => setIndex((index + 1) % factions.length)
-  const prev_faction = factions[((index - 1 + factions.length) % factions.length)]
-  const next_faction = factions[((index + 1) % factions.length)]
+  const prev_faction = factions[((index + 1) % factions.length)]
+  const next_faction = factions[((index - 1 + factions.length) % factions.length)]
   const faction = factions[index]
   useEffect(() => {
     const handleScroll = () => {
