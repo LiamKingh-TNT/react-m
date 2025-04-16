@@ -10,10 +10,11 @@
     "home":{
         "brief_story":"To claim the one and only supreme throne, countless rival factions wage war upon this land.",
         "how_to_play":"How to Play",
-        "brief_tutorial":"Expend your action points to summon fierce warriors, lead them in battle, or draw mighty cards. Combine their strengths and shatter every obstacle that stands before you."
+        "brief_tutorial":"Expend your action points to summon fierce warriors, lead them in battle, or draw mighty cards. Combine their strengths and shatter every obstacle that stands before you.",
+        "faction":"Faction"
     },
-    "factions": [
-        {
+    "factions": {
+        "the_supreme_empire":{
             "img": "/images/the_supreme_empire.png",
             "name": "The Supreme Empire",
             "traits": [
@@ -30,17 +31,10 @@
             "soldiers": [
                 {
                     "name":"",
-                    "def":0,
-                    "hp":0,
-                    "dex":0,
-                    "size":"",
-                    "type":"",
-                    "cost":"",
                     "skills": [
                         {
                             "name":"",
-                            "desc":"",
-                            "cost":""
+                            "desc":""
                         }
                     ],
                     "story":""
@@ -49,16 +43,10 @@
             "lords": [
                 {
                     "name":"",
-                    "def":0,
-                    "hp":0,
-                    "dex":0,
-                    "size":"",
-                    "type":"",
                     "skills":[
                         {
                             "name":"",
-                            "desc":"",
-                            "cost":""
+                            "desc":""
                         }
                     ],
                     "story":""
@@ -72,9 +60,55 @@
                 }
             ]
         },
-        {
+        "the_supreme_empire":{
+            "img": "/images/the_supreme_empire.png",
+            "name": "The Supreme Empire",
+            "traits": [
+                {
+                    "name":"",
+                    "effects": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ]
+                }
+            ],
+            "soldiers": [
+                {
+                    "name":"",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "lords": [
+                {
+                    "name":"",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "cards": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":0
+                }
+            ]
+        },
+        "ecclesia_of_luca":{
             "img":"/images/ecclesia_of_luca.png",
-            "name":"ecclesia of luca",
+            "name":"Ecclesia of Luca",
             "traits": [
                 {
                     "name":"",
@@ -131,9 +165,9 @@
                 }
             ]
         },
-        {
+        "octorian_vanguard":{
             "img": "/images/octorian_vanguard.png",
-            "name": "octorian vanguard",
+            "name": "Octorian Vanguard",
             "traits": [
                 {
                     "name":"",
@@ -190,5 +224,5 @@
                 }
             ]
         }
-    ]
+    }
   }

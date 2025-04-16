@@ -10,10 +10,11 @@
     "home":{
         "brief_story":"為了爭奪這唯一且至高的王座，大量各異的勢力在此交戰。",
         "how_to_play":"遊戲玩法",
-        "brief_tutorial":"消耗你的行動點，召喚你的戰士並操控他們，或是抽取強大的卡牌，相互配合，擊潰一切障礙。"
+        "brief_tutorial":"消耗你的行動點，召喚你的戰士並操控他們，或是抽取強大的卡牌，相互配合，擊潰一切障礙。",
+        "faction":"勢力"
     },
-    "factions": [
-        {
+    "factions": {
+        "the_supreme_empire":{
             "img": "/images/the_supreme_empire.png",
             "name": "上京",
             "traits": [
@@ -30,12 +31,6 @@
             "soldiers": [
                 {
                     "name":"",
-                    "def":0,
-                    "hp":0,
-                    "dex":0,
-                    "size":"",
-                    "type":"",
-                    "cost":"",
                     "skills": [
                         {
                             "name":"",
@@ -72,7 +67,53 @@
                 }
             ]
         },
-        {
+        "the_supreme_empire":{
+            "img": "/images/the_supreme_empire.png",
+            "name": "上京",
+            "traits": [
+                {
+                    "name":"",
+                    "effects": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ]
+                }
+            ],
+            "soldiers": [
+                {
+                    "name":"",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "lords": [
+                {
+                    "name":"",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "cards": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":0
+                }
+            ]
+        },
+        "ecclesia_of_luca":{
             "img":"/images/ecclesia_of_luca.png",
             "name":"露卡修會",
             "traits": [
@@ -131,7 +172,7 @@
                 }
             ]
         },
-        {
+        "octorian_vanguard":{
           "img": "/images/octorian_vanguard.png",
           "name": "異星先鋒",
           "traits": [
@@ -190,6 +231,6 @@
               }
           ]
       }
-    ]
+    }
 }
   

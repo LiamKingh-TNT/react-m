@@ -1,0 +1,51 @@
+{
+    "img": "/images/the_supreme_empire.png",
+    "name": "factions.the_supreme_empire.name",
+    "traits": [
+        ""
+    ],
+    "soldiers": [
+        {
+            "name":"",
+            "def":0,
+            "hp":0,
+            "dex":0,
+            "size":0,
+            "type":0,
+            "cost":0,
+            "skills": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":0
+                }
+            ],
+            "story":""
+        }
+    ],
+    "lords": [
+        {
+            "name":"",
+            "def":0,
+            "hp":0,
+            "dex":0,
+            "size":"",
+            "type":"",
+            "skills":[
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":""
+                }
+            ],
+            "story":""
+        }
+    ],
+    "cards": [
+        {
+            "name":"",
+            "desc":"",
+            "cost":0
+        }
+    ]
+}
