@@ -1,6 +1,7 @@
 {
     "img": "/images/the_supreme_empire.png",
     "name": "factions.the_supreme_empire.name",
+    "groupe":"solaris",
     "traits": [
         ""
     ],

@@ -1,6 +1,7 @@
 {
     "img":"/images/ecclesia_of_luca.png",
     "name":"factions.ecclesia_of_luca.name",
+    "groupe":"selenyx",
     "traits": [
         {
             "name":"",

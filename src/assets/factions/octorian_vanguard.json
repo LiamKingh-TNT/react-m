@@ -1,6 +1,7 @@
 {
     "img": "/images/octorian_vanguard.png",
     "name": "factions.octorian_vanguard.name",
+    "groupe":"solaris",
     "traits": [
         {
             "name":"",
