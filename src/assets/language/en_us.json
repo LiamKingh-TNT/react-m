@@ -11,55 +11,14 @@
         "brief_story":"To claim the one and only supreme throne, countless rival factions wage war upon this land.",
         "how_to_play":"How to Play",
         "brief_tutorial":"Expend your action points to summon fierce warriors, lead them in battle, or draw mighty cards. Combine their strengths and shatter every obstacle that stands before you.",
-        "faction":"Faction"
+        "factions":"Factions"
+    },
+    "filter":{
+        "solaris":"Solaris",
+        "chaos":"Chaos",
+        "selenyx":"Selenyx"
     },
     "factions": {
-        "the_supreme_empire":{
-            "img": "/images/the_supreme_empire.png",
-            "name": "The Supreme Empire",
-            "traits": [
-                {
-                    "name":"",
-                    "effects": [
-                        {
-                            "name":"",
-                            "desc":""
-                        }
-                    ]
-                }
-            ],
-            "soldiers": [
-                {
-                    "name":"",
-                    "skills": [
-                        {
-                            "name":"",
-                            "desc":""
-                        }
-                    ],
-                    "story":""
-                }
-            ],
-            "lords": [
-                {
-                    "name":"",
-                    "skills":[
-                        {
-                            "name":"",
-                            "desc":""
-                        }
-                    ],
-                    "story":""
-                }
-            ],
-            "cards": [
-                {
-                    "name":"",
-                    "desc":"",
-                    "cost":0
-                }
-            ]
-        },
         "the_supreme_empire":{
             "img": "/images/the_supreme_empire.png",
             "name": "The Supreme Empire",
@@ -168,6 +127,183 @@
         "octorian_vanguard":{
             "img": "/images/octorian_vanguard.png",
             "name": "Octorian Vanguard",
+            "traits": [
+                {
+                    "name":"",
+                    "effects": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ]
+                }
+            ],
+            "soldiers": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "cost":"",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "lords": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "cards": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":0
+                }
+            ]
+        },
+        "dwarf_forge":{
+            "img": "/images/dwarf_forge.png",
+            "name": "Dwarf Forge",
+            "traits": [
+                {
+                    "name":"",
+                    "effects": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ]
+                }
+            ],
+            "soldiers": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "cost":"",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "lords": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "cards": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":0
+                }
+            ]
+        },
+        "crimson_sunchasers":{
+            "img": "/images/crimson_sunchasers.png",
+            "name": "Crimson Sunchasers",
+            "traits": [
+                {
+                    "name":"",
+                    "effects": [
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ]
+                }
+            ],
+            "soldiers": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "cost":"",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "lords": [
+                {
+                    "name":"",
+                    "def":0,
+                    "hp":0,
+                    "dex":0,
+                    "size":"",
+                    "type":"",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            ],
+            "cards": [
+                {
+                    "name":"",
+                    "desc":"",
+                    "cost":0
+                }
+            ]
+        },
+        "alliance_of_ascendants":{
+            "img": "/images/alliance_of_ascendants.png",
+            "name": "Alliance of Ascendants",
             "traits": [
                 {
                     "name":"",

@@ -18,7 +18,7 @@ const ImageTextSection = ({
           ${reverse ? 'order-2 md:order-1' : 'order-2 md:order-2'}
         `}
       >
-        <p className={`text-[#B5D7D7] text-[20px] ${textClassName} md:text-[40px]`}>
+        <p className={`text-[#B5D7D7] text-[20px] ${textClassName} z-10 md:text-[40px]`}>
           {text}
         </p>
       </div>
