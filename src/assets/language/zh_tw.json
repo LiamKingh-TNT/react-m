@@ -7,6 +7,11 @@
       "rules": "遊戲規則",
       "language": "語言：中文"
     },
+    "home":{
+        "brief_story":"為了爭奪這唯一且至高的王座，大量各異的勢力在此交戰。",
+        "how_to_play":"遊戲玩法",
+        "brief_tutorial":"消耗你的行動點，召喚你的戰士並操控他們，或是抽取強大的卡牌，相互配合，擊潰一切障礙。"
+    },
     "factions": [
         {
             "img": "/images/the_supreme_empire.png",

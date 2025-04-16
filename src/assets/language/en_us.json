@@ -7,6 +7,11 @@
       "rules": "Game Rules",
       "language": "Language: English"
     },
+    "home":{
+        "brief_story":"To claim the one and only supreme throne, countless rival factions wage war upon this land.",
+        "how_to_play":"How to Play",
+        "brief_tutorial":"Expend your action points to summon fierce warriors, lead them in battle, or draw mighty cards. Combine their strengths and shatter every obstacle that stands before you."
+    },
     "factions": [
         {
             "img": "/images/the_supreme_empire.png",
@@ -119,8 +124,8 @@
                 }
             ],
             "cards": [
-                {
-                    "name":"",
+        {
+            "name":"",
                     "desc":"",
                     "cost":0
                 }
