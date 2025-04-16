@@ -46,7 +46,7 @@ function ProductList() {
               </div>
               <p className="text-white text-[60px]">{lang(faction.name)}</p>
             </div>
-            <p className="mt-[50vh]"/>
+            <p className="mt-[20vh]"/>
           </div>
         </div>
       
