@@ -68,8 +68,8 @@ export function InfoBoard({faction, type="lord"}){
                     </p>
                     )}
                     {(info===1 && type!="cards")&&(
-                    <div className="grid grid-cols-5 w-full h-fit">
-                        <div className="col-span-2 text-right text-[#C4C4C4]">
+                    <div className="grid grid-cols-6 w-full h-fit">
+                        <div className="col-span-1 text-right text-[#C4C4C4]">
                         <p>{lang('fi.hp')}</p>
                         <p>{lang('fi.def')}</p>
                         <p>{lang('fi.dex')}</p>
@@ -77,7 +77,7 @@ export function InfoBoard({faction, type="lord"}){
                         <p>{lang('fi.type')}</p>
                         {type=="soldier"?<p>{lang('fi.cost')}</p>:<></>}
                         </div>
-                        <div className="col-span-3 ml-2">
+                        <div className="col-span-2 ml-2">
                         <p>{lang(obj[selected].hp)}</p>
                         <p>{lang(obj[selected].def)}</p>
                         <p>{lang(obj[selected].dex)}</p>
