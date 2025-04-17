@@ -16,7 +16,7 @@ export default function GradientGameTitle({
   ];
 
   // 根據文字長度計算畫布大小
-  const textWidth = text.length * fontSize * 0.6;
+  const textWidth = text.length * fontSize;
   const viewWidth = textWidth + strokeWidth * 4;
   const viewHeight = fontSize * 1.5 + strokeWidth * 4;
 

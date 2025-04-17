@@ -56,8 +56,8 @@ export function FactionIntroContent(faction) {
               strokeWidth={40}
               fill="#3E2F2F"
               strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-              width={1000}
-              height={1000}
+              width={1600}
+              height={1200}
             />
           </div>
           <div className="pt-20 fixed z-[0] w-[100vw] h-[100vh] top-0 ml-[5vw] backdrop-blur-md shadow-md md:w-[90vw] overflow-hidden"
