@@ -158,6 +158,35 @@
             "story":"",
             "img":"",
             "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":3,
+            "hp":12,
+            "dex":3,
+            "size":"fi.medium",
+            "type":"fi.life",
+            "cost":5,
+            "skills": [
+                {
+                    "name":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.desc",
+                    "cost":4
+                },
+                {
+                    "name":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.desc",
+                    "cost":4
+                },
+                {
+                    "name":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.desc",
+                    "cost":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.cost"
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
         }
     ],
     "lords": [

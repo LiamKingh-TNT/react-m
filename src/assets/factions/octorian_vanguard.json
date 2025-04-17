@@ -21,13 +21,42 @@
     "soldiers": [
         {
             "name":"",
-            "def":0,
-            "hp":0,
-            "dex":0,
-            "size":"fi.medium",
+            "def":3,
+            "hp":5,
+            "dex":2,
+            "size":"fi.small",
             "type":"fi.life",
-            "cost":0,
+            "cost":2,
             "skills": [
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":1,
+            "hp":2,
+            "dex":1,
+            "size":"fi.small",
+            "type":"fi.life",
+            "cost":3,
+            "skills": [
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                },
                 {
                     "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
                     "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
