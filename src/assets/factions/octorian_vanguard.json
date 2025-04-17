@@ -66,6 +66,88 @@
             "story":"",
             "img":"",
             "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":2,
+            "hp":6,
+            "dex":1,
+            "size":"fi.large",
+            "type":"fi.machine",
+            "cost":3,
+            "skills": [
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":2
+                },
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":3,
+            "hp":8,
+            "dex":3,
+            "size":"fi.large",
+            "type":"fi.machine",
+            "cost":6,
+            "skills": [
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                },
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                },
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":2
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":4,
+            "hp":8,
+            "dex":2,
+            "size":"fi.large",
+            "type":"fi.machine",
+            "cost":6,
+            "skills": [
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":2
+                },
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                },
+                {
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":2
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
         }
     ],
     "lords": [
@@ -122,7 +204,7 @@
                 }
             ],
             "story":"factions.octorian_vanguard.lords.lord_1.story",
-            "img":"/images/the_emperor.png",
+            "img":"/images/daniel.png",
             "head_img":"/images/the_emperor_head.png"
         }
     ],
@@ -131,7 +213,37 @@
             "name":"factions.octorian_vanguard.cards.card_1.name",
             "desc":"factions.octorian_vanguard.cards.card_1.desc",
             "img":"",
-            "cost":0
+            "cost":2
+        },
+        {
+            "name":"factions.octorian_vanguard.cards.card_1.name",
+            "desc":"factions.octorian_vanguard.cards.card_1.desc",
+            "img":"",
+            "cost":3
+        },
+        {
+            "name":"factions.octorian_vanguard.cards.card_1.name",
+            "desc":"factions.octorian_vanguard.cards.card_1.desc",
+            "img":"",
+            "cost":1
+        },
+        {
+            "name":"factions.octorian_vanguard.cards.card_1.name",
+            "desc":"factions.octorian_vanguard.cards.card_1.desc",
+            "img":"",
+            "cost":1
+        },
+        {
+            "name":"factions.octorian_vanguard.cards.card_1.name",
+            "desc":"factions.octorian_vanguard.cards.card_1.desc",
+            "img":"",
+            "cost":3
+        },
+        {
+            "name":"factions.octorian_vanguard.cards.card_1.name",
+            "desc":"factions.octorian_vanguard.cards.card_1.desc",
+            "img":"",
+            "cost":1
         }
     ]
 }
