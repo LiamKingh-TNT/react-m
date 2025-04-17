@@ -8,14 +8,6 @@
         {
             "name":"factions.octorian_vanguard.traits.trait_1.name",
             "effect":"factions.octorian_vanguard.traits.trait_1.effect"
-        },
-        {
-            "name":"factions.octorian_vanguard.traits.trait_2.name",
-            "effect":"factions.octorian_vanguard.traits.trait_2.effect"
-        },
-        {
-            "name":"factions.octorian_vanguard.traits.trait_3.name",
-            "effect":"factions.octorian_vanguard.traits.trait_3.effect"
         }
     ],
     "soldiers": [

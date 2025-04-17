@@ -16,6 +16,14 @@
         {
             "name":"factions.alliance_of_ascendants.traits.trait_3.name",
             "effect":"factions.alliance_of_ascendants.traits.trait_3.effect"
+        },
+        {
+            "name":"factions.crimson_sunchasers.traits.trait_4.name",
+            "effect":"factions.crimson_sunchasers.traits.trait_4.effect"
+        },
+        {
+            "name":"factions.crimson_sunchasers.traits.trait_5.name",
+            "effect":"factions.crimson_sunchasers.traits.trait_5.effect"
         }
     ],
     "soldiers": [

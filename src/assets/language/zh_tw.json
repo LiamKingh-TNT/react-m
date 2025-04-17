@@ -42,7 +42,15 @@
             "name": "上京",
             "traits": {
                 "trait_1":{
-                    "name":"",
+                    "name":"早朝",
+                    "effect":"每次輪到你的回合時，若為日年，則疊加一層政績，每疊加一層政積額外獲得2點行動點，最多疊加5次"
+                },
+                "trait_2":{
+                    "name":"軍陣",
+                    "effect":""
+                },
+                "trait_3":{
+                    "name":"肅清",
                     "effect":""
                 }
             },
@@ -69,6 +77,16 @@
                         }
                     ],
                     "story":"空"
+                },
+                "lord_2":{
+                    "name":"雙生土地",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ],
+                    "story":"空"
                 }
             },
             "cards": [
@@ -82,17 +100,16 @@
         "ecclesia_of_luca":{
             "img":"/images/ecclesia_of_luca.png",
             "name":"露卡修會",
-            "traits": [
-                {
-                    "name":"",
-                    "effects": [
-                        {
-                            "name":"",
-                            "desc":""
-                        }
-                    ]
+            "traits": {
+                "trait_1":{
+                    "name":"月光禱文",
+                    "effect":""
+                },
+                "trait_2":{
+                    "name":"異端殺手",
+                    "effect":""
                 }
-            ],
+            },
             "soldiers": [
                 {
                     "name":"",
@@ -141,17 +158,12 @@
         "octorian_vanguard":{
           "img": "/images/octorian_vanguard.png",
           "name": "異星先鋒",
-          "traits": [
-              {
-                  "name":"",
-                  "effects": [
-                      {
-                          "name":"",
-                          "desc":""
-                      }
-                  ]
-              }
-          ],
+          "traits": {
+            "trait_1":{
+                "name":"基建",
+                "effect":""
+            }
+        },
           "soldiers": [
               {
                   "name":"",
@@ -200,17 +212,16 @@
       "dwarf_forge":{
           "img": "/images/dwarf_forge.png",
           "name": "迪沃爾夫鑄造場",
-          "traits": [
-              {
-                  "name":"",
-                  "effects": [
-                      {
-                          "name":"",
-                          "desc":""
-                      }
-                  ]
-              }
-          ],
+          "traits": {
+            "trait_1":{
+                "name":"加速鑄造",
+                "effect":""
+            },
+            "trait_2":{
+                "name":"機械生命",
+                "effect":"不受飢荒卡影響"
+            }
+        },
           "soldiers": [
               {
                   "name":"",
@@ -259,17 +270,20 @@
       "crimson_sunchasers":{
           "img": "/images/crimson_sunchasers.png",
           "name": "逐日血魔",
-          "traits": [
-              {
-                  "name":"",
-                  "effects": [
-                      {
-                          "name":"",
-                          "desc":""
-                      }
-                  ]
-              }
-          ],
+          "traits": {
+            "trait_1":{
+                "name":"日焰焚身",
+                "effect":""
+                },
+            "trait_2":{
+                "name":"月下領主",
+                "effect":"在月光階段所有單位速度+1"
+                },
+            "trait_3":{
+                "name":"血唑",
+                "effect":""
+                }
+            },
           "soldiers": [
               {
                   "name":"",
@@ -318,17 +332,28 @@
       "alliance_of_ascendants":{
           "img": "/images/alliance_of_ascendants.png",
           "name": "修真聯盟",
-          "traits": [
-              {
-                  "name":"",
-                  "effects": [
-                      {
-                          "name":"",
-                          "desc":""
-                      }
-                  ]
-              }
-          ],
+          "traits": {
+            "trait_1":{
+                "name":"天道庇佑",
+                "effect":"在日光階段玩家可決定使正道單位獲得判定優勢，邪道單位獲得判定劣勢"
+             },
+            "trait_2":{
+                "name":"月黑風高",
+                "effect":"在月光階段邪道單位的攻擊力+2，正道攻擊力-1"
+             },
+            "trait_3":{
+                "name":"練炁",
+                "effect":""
+             },
+            "trait_4":{
+                "name":"亦正亦邪",
+                "effect":""
+             },
+            "trait_5":{
+                "name":"集炁",
+                "effect":"每有一個兵棋升階獲得1D2行動點"
+             }
+            },
           "soldiers": [
               {
                   "name":"",
