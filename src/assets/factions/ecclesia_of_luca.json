@@ -12,10 +12,6 @@
         {
             "name":"factions.ecclesia_of_luca.traits.trait_2.name",
             "effect":"factions.ecclesia_of_luca.traits.trait_2.effect"
-        },
-        {
-            "name":"factions.ecclesia_of_luca.traits.trait_3.name",
-            "effect":"factions.ecclesia_of_luca.traits.trait_3.effect"
         }
     ],
     "soldiers": [

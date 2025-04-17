@@ -3,41 +3,23 @@ import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import ImageTextSection from './image_text_sction';
 import factions from '@/assets/factions'
+import BackgroundBlur from './background_blur';
 function Intro() {
   const { t:lang } = useTranslation();
   const [index, setIndex] = useState(0)
-  const [blur, setBlur] = useState(0);
 
   const prev = () => setIndex((index - 1 + factions.length) % factions.length)
   const next = () => setIndex((index + 1) % factions.length)
   const prev_faction = factions[((index - 1 + factions.length) % factions.length)]
   const next_faction = factions[((index + 1) % factions.length)]
   const faction = factions[index]
-  useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
-      const maxBlur = 5;
-      const maxScroll = window.innerHeight / 2; // 半個螢幕高度
-      const blurValue = Math.min((y / maxScroll) * maxBlur,maxBlur);
-      setBlur(blurValue);
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   console.log(factions);
   return (
         <div className="content relative z-20 ">
           <div className="flex items-center justify-center h-screen">
             <p className="text-[#3E2F2F] z-50 mt-[-10vh] title overflow-visible text-[8vw] font-extrabold" data-storke={lang('title2')}>{lang('title2')}</p>
           </div>
-          <div className="pt-20 fixed z-[0] w-[100vw] h-[100vh] top-0 ml-[5vw] backdrop-blur-md shadow-md md:w-[90vw] overflow-hidden"
-               style={{
-                backdropFilter: `blur(${blur}px)`,
-                WebkitBackdropFilter: `blur(${blur}px)`,
-                backgroundColor: 'rgba(0,0,0,0.2)'
-              }}
-          />
+          <BackgroundBlur/>
           <div className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[90vw] overflow-hidden">
             <ImageTextSection
               imgSrc="/images/lords.png"

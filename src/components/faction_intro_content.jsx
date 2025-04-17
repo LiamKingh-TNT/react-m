@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap';
 import { InfoBoard } from './info_board';
 import TitleText from './title_text'
+import BackgroundBlur from './background_blur';
 export function FactionIntroContent(faction) {
     const rom_number = ['O','I','II','III','IV','V','VI','VII','VIII','IX','X'];
     const { t:lang } = useTranslation();
-    const [blur, setBlur] = useState(0);
     const [selected_trait, SetSelectedTrait] = useState(0);
     const btnRefs = useRef([]);
 
@@ -26,18 +26,7 @@ export function FactionIntroContent(faction) {
         ease: 'power2.out',
       });
     };
-    useEffect(() => {
-    const handleScroll = () => {
-        const y = window.scrollY;
-        const maxBlur = 5;
-        const maxScroll = window.innerHeight / 2; // 半個螢幕高度
-        const blurValue = Math.min((y / maxScroll) * maxBlur,maxBlur);
-        setBlur(blurValue);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    
     const scrollToWithOffset = (id) => {
         const element = document.getElementById(id);
         const offset = -100; // 上移 100px，可根據你的 header 高度調整
@@ -60,13 +49,7 @@ export function FactionIntroContent(faction) {
               height={1200}
             />
           </div>
-          <div className="pt-20 fixed z-[0] w-[100vw] h-[100vh] top-0 ml-[5vw] backdrop-blur-md shadow-md md:w-[90vw] overflow-hidden"
-               style={{
-                backdropFilter: `blur(${blur}px)`,
-                WebkitBackdropFilter: `blur(${blur}px)`,
-                backgroundColor: 'rgba(0,0,0,0.2)'
-              }}
-          />
+          <BackgroundBlur/>
             <div id="traits" className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[100vw] overflow-hidden">
               <div className="w-full h-fit">
                 <div className="flex items-center justify-center">

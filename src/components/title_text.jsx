@@ -24,10 +24,10 @@ export default function GradientGameTitle({
   let xPos = viewWidth / 2;
   let textAnchor = "middle";
   if (align === "left") {
-    xPos = 0;
+    xPos = 20;
     textAnchor = "start";
   } else if (align === "right") {
-    xPos = viewWidth;
+    xPos = viewWidth-20;
     textAnchor = "end";
   }
 
