@@ -31,7 +31,7 @@
                 {
                     "name":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.name",
                     "desc":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.desc",
-                    "cost":0
+                    "cost":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.cost"
                 }
             ],
             "story":"",
