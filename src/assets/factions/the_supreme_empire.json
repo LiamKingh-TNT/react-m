@@ -24,17 +24,18 @@
             "def":0,
             "hp":0,
             "dex":0,
-            "size":0,
-            "type":0,
+            "size":"fi.medium",
+            "type":"fi.life",
             "cost":0,
             "skills": [
                 {
-                    "name":"",
-                    "desc":"",
+                    "name":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.the_supreme_empire.soldiers.soldier_1.skill_1.desc",
                     "cost":0
                 }
             ],
-            "story":""
+            "story":"",
+            "img":""
         }
     ],
     "lords": [
@@ -47,8 +48,8 @@
             "type":"fi.life",
             "skills":[
                 {
-                    "name":"",
-                    "desc":"",
+                    "name":"factions.the_supreme_empire.soldiers.lord_1.skill_1.name",
+                    "desc":"factions.the_supreme_empire.soldiers.lord_1.skill_1.desc",
                     "cost":""
                 }
             ],
@@ -58,8 +59,9 @@
     ],
     "cards": [
         {
-            "name":"",
-            "desc":"",
+            "name":"factions.the_supreme_empire.cards.card_1.name",
+            "desc":"factions.the_supreme_empire.cards.card_1.desc",
+            "img":"",
             "cost":0
         }
     ]

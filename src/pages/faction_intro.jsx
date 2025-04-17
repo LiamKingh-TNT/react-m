@@ -16,7 +16,7 @@ function FactionIntro() {
                 faction={factions[index]}
             />
             {console.log(factions[index].backgound_img)}
-            <img src={factions[index].background_img} className="fixed z-0 top-0 h-screen w-screen object-cover"/>
+            <img src={factions[index].background_img} className="fixed z-10 top-0 h-screen w-screen object-cover"/>
             <Footer />
         </div>
     )

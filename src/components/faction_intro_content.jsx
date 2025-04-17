@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router';
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap';
+import TitleText from './title_text'
 export function FactionIntroContent(faction) {
     const rom_number = ['O','I','II','III','IV','V','VI','VII','VIII','IX','X'];
     const { t:lang } = useTranslation();
@@ -10,7 +11,6 @@ export function FactionIntroContent(faction) {
     const [selected_lord, SetSelectedLord] = useState(0);
     const [lord_info,SetLordInfo] = useState(0);
     const btnRefs = useRef([]);
-    btnRefs.current = []; // 清空避免重複
     
 
     const handleMouseEnter = (index) => {
@@ -53,7 +53,15 @@ export function FactionIntroContent(faction) {
     return(
         <div className="content relative z-20 overflow-x-hidden">
           <div className="flex items-center justify-center h-screen">
-            <p className="text-[#3E2F2F] z-50 mt-[-10vh] title overflow-visible text-[8vw] font-extrabold" data-storke={lang(faction.faction.name)}>{lang(faction.faction.name)}</p>
+            <TitleText
+              text={lang(faction.faction.name)}
+              fontSize={100}
+              strokeWidth={40}
+              fill="#3E2F2F"
+              strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+              width={1000}
+              height={1000}
+            />
           </div>
           <div className="pt-20 fixed z-[0] w-[100vw] h-[100vh] top-0 ml-[5vw] backdrop-blur-md shadow-md md:w-[90vw] overflow-hidden"
                style={{
@@ -65,7 +73,15 @@ export function FactionIntroContent(faction) {
             <div className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[100vw] overflow-hidden">
               <div className="w-full h-fit">
                 <div className="flex items-center justify-center">
-                    <p id="traits" className="text-[#3E2F2F] z-50 mt-[-10vh] title overflow-visible text-[8vw] font-extrabold" data-storke={lang('fi.traits')}>{lang('fi.traits')}</p>
+                  <TitleText
+                    text={lang('fi.traits')}
+                    fontSize={80}
+                    strokeWidth={30}
+                    fill="#3E2F2F"
+                    strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+                    width={1000}
+                    height={1000}
+                  />
                 </div>
                 <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-[70vw_3vw] grid-rows-4">
                     <div className=" bg-[#815A5A]/50 border-8 border-[#73979F] row-span-4 min-h-fit">
@@ -94,7 +110,15 @@ export function FactionIntroContent(faction) {
               </div>
               <div className="h-fit w-[100vw] mt-[250px] mx-auto md:mt-[150px]">
                     <div className="flex items-center justify-center">
-                      <p id="lords" className="text-[#3E2F2F] z-50 mt-[-10vh] title overflow-visible text-[8vw] font-extrabold" data-storke={lang('fi.lords')}>{lang('fi.lords')}</p>
+                      <TitleText
+                        text={lang('fi.lords')}
+                        fontSize={80}
+                        strokeWidth={30}
+                        fill="#3E2F2F"
+                        strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+                        width={1000}
+                        height={1000}
+                      />
                     </div>
                     <div className="info_frame max-h-fit min-h-[50vh] w-[100vw] absolute right-0 mr-[16px] md:w-[85vw] grid grid-cols-1 grid-rows-3 md:grid-cols-10 md:grid-rows-5 overflow-visible md:border-y-8">
 
@@ -110,10 +134,17 @@ export function FactionIntroContent(faction) {
                       </div>
 
                       <div className="col-span-6 row-span-5 flex flex-col items-start pl-1 pt-1">
-                        <p className="text-[#B5D7D7] z-50 title text-[40px] font-extrabold" data-storke={lang(faction.faction.lords[selected_lord].name)}>
-                            {lang(faction.faction.lords[selected_lord].name)}
-                        </p>
-                        <div className="text-[30px] text-white text-left mt-5">
+                        <TitleText
+                          text={lang(faction.faction.lords[selected_lord].name)}
+                          fontSize={40}
+                          strokeWidth={10}
+                          fill="#B5D7D7"
+                          strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+                          width={1000}
+                          height={1000}
+                          align="left"
+                        />
+                        <div className="text-[30px] text-white text-left mt-0">
                           {lord_info===0 &&(
                             <p className="text-[30px] text-white">
                               {lang(faction.faction.lords[selected_lord].story)}
@@ -141,13 +172,13 @@ export function FactionIntroContent(faction) {
                         </div>
                       </div>
                       <div className="absolute top-80 md:top-1/2 right-0 -translate-y-1/2 flex flex-col space-y-0 z-50">
-                        <button onClick={()=>SetLordInfo(0)} className={`w-16 h-16 bg-[${lord_info==0?"#44646B":"#7FA4AA"}] rounded-l-md flex items-center justify-center`}>
+                        <button onClick={()=>SetLordInfo(0)} className={`w-16 h-16 bg-[${lord_info==0?"#7FA4AA":"#44646B"}] rounded-l-md flex items-center justify-center`}>
                           <img src="/images/open-book.png" alt="icon" className="w-14 h-auto" />
                         </button>
-                        <button onClick={()=>SetLordInfo(1)} className={`w-16 h-16 bg-[${lord_info==1?"#44646B":"#7FA4AA"}] rounded-l-md flex items-center justify-center`}>
+                        <button onClick={()=>SetLordInfo(1)} className={`w-16 h-16 bg-[${lord_info==1?"#7FA4AA":"#44646B"}] rounded-l-md flex items-center justify-center`}>
                           <img src="/images/features.png" alt="icon" className="w-14 h-auto" />
                         </button>
-                        <button onClick={()=>SetLordInfo(2)} className={`w-16 h-16 bg-[${lord_info==2?"#44646B":"#7FA4AA"}] rounded-l-md flex items-center justify-center`}>
+                        <button onClick={()=>SetLordInfo(2)} className={`w-16 h-16 bg-[${lord_info==2?"#7FA4AA":"#44646B"}] rounded-l-md flex items-center justify-center`}>
                           <img src="/images/skill.png" alt="icon" className="w-14 h-auto" />
                         </button>
                       </div>
