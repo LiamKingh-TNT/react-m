@@ -22,12 +22,168 @@
         {
             "name":"",
             "def":0,
-            "hp":0,
-            "dex":0,
+            "hp":6,
+            "dex":4,
+            "size":"fi.small",
+            "type":"fi.life",
+            "cost":1,
+            "skills": [
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":0,
+            "hp":20,
+            "dex":2,
+            "size":"fi.small",
+            "type":"fi.life",
+            "cost":1,
+            "skills": [
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":2
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":3
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":2,
+            "hp":15,
+            "dex":1,
             "size":"fi.medium",
             "type":"fi.life",
-            "cost":0,
+            "cost":4,
             "skills": [
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":2
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":3
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":1,
+            "hp":18,
+            "dex":2,
+            "size":"fi.medium",
+            "type":"fi.life",
+            "cost":6,
+            "skills": [
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":3
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":1
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":4
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                }
+            ],
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"",
+            "def":2,
+            "hp":20,
+            "dex":2,
+            "size":"fi.medium",
+            "type":"fi.life",
+            "cost":8,
+            "skills": [
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":3
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":6
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
+                },
                 {
                     "name":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.name",
                     "desc":"factions.crimson_sunchasers.soldiers.soldier_1.skill_1.desc",
@@ -42,21 +198,64 @@
     "lords": [
         {
             "name":"factions.crimson_sunchasers.lords.lord_1.name",
-            "def":0,
-            "hp":0,
-            "dex":0,
-            "size":"fi.medium",
+            "def":1,
+            "hp":30,
+            "dex":3,
+            "size":"fi.small",
             "type":"fi.life",
             "skills":[
                 {
                     "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
                     "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
-                    "cost":0
+                    "cost":1
                 },
                 {
                     "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
                     "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
-                    "cost":0
+                    "cost":3
+                },
+                {
+                    "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
+                    "cost":2
+                },
+                {
+                    "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
+                    "cost":5
+                }
+            ],
+            "story":"factions.crimson_sunchasers.lords.lord_1.story",
+            "img":"/images/the_emperor.png",
+            "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"factions.crimson_sunchasers.lords.lord_1.name",
+            "def":2,
+            "hp":22,
+            "dex":3,
+            "size":"fi.small",
+            "type":"fi.life",
+            "skills":[
+                {
+                    "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
+                    "cost":3
+                },
+                {
+                    "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
+                    "cost":1
+                },
+                {
+                    "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
+                    "cost":1
+                },
+                {
+                    "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.desc",
+                    "cost":3
                 },
                 {
                     "name":"factions.crimson_sunchasers.lords.lord_1.skills.skill_1.name",
@@ -65,11 +264,41 @@
                 }
             ],
             "story":"factions.crimson_sunchasers.lords.lord_1.story",
-            "img":"/images/the_emperor.png",
+            "img":"/images/lilith.png",
             "head_img":"/images/the_emperor_head.png"
         }
     ],
     "cards": [
+        {
+            "name":"factions.crimson_sunchasers.cards.card_1.name",
+            "desc":"factions.crimson_sunchasers.cards.card_1.desc",
+            "img":"",
+            "cost":2
+        },
+        {
+            "name":"factions.crimson_sunchasers.cards.card_1.name",
+            "desc":"factions.crimson_sunchasers.cards.card_1.desc",
+            "img":"",
+            "cost":4
+        },
+        {
+            "name":"factions.crimson_sunchasers.cards.card_1.name",
+            "desc":"factions.crimson_sunchasers.cards.card_1.desc",
+            "img":"",
+            "cost":2
+        },
+        {
+            "name":"factions.crimson_sunchasers.cards.card_1.name",
+            "desc":"factions.crimson_sunchasers.cards.card_1.desc",
+            "img":"",
+            "cost":2
+        },
+        {
+            "name":"factions.crimson_sunchasers.cards.card_1.name",
+            "desc":"factions.crimson_sunchasers.cards.card_1.desc",
+            "img":"",
+            "cost":0
+        },
         {
             "name":"factions.crimson_sunchasers.cards.card_1.name",
             "desc":"factions.crimson_sunchasers.cards.card_1.desc",

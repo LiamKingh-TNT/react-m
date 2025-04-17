@@ -12,10 +12,6 @@
         {
             "name":"factions.dwarf_forge.traits.trait_2.name",
             "effect":"factions.dwarf_forge.traits.trait_2.effect"
-        },
-        {
-            "name":"factions.dwarf_forge.traits.trait_3.name",
-            "effect":"factions.dwarf_forge.traits.trait_3.effect"
         }
     ],
     "soldiers": [
