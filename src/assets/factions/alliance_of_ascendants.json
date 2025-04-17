@@ -1,17 +1,21 @@
 {
     "id":"alliance_of_ascendants",
-    "img":"/images/alliance_of_ascendants.png",
-    "name":"factions.alliance_of_ascendants.name",
-    "groupe":"chaos",
+    "img": "/images/alliance_of_ascendants.png",
+    "background_img": "/images/alliance_of_ascendants_background.png",
+    "name": "factions.alliance_of_ascendants.name",
+    "groupe":"solaris",
     "traits": [
         {
-            "name":"",
-            "effects": [
-                {
-                    "name":"",
-                    "desc":""
-                }
-            ]
+            "name":"factions.alliance_of_ascendants.traits.trait_1.name",
+            "effect":"factions.alliance_of_ascendants.traits.trait_1.effect"
+        },
+        {
+            "name":"factions.alliance_of_ascendants.traits.trait_2.name",
+            "effect":"factions.alliance_of_ascendants.traits.trait_2.effect"
+        },
+        {
+            "name":"factions.alliance_of_ascendants.traits.trait_3.name",
+            "effect":"factions.alliance_of_ascendants.traits.trait_3.effect"
         }
     ],
     "soldiers": [
@@ -20,41 +24,56 @@
             "def":0,
             "hp":0,
             "dex":0,
-            "size":"",
-            "type":"",
-            "cost":"",
+            "size":"fi.medium",
+            "type":"fi.life",
+            "cost":0,
             "skills": [
                 {
-                    "name":"",
-                    "desc":"",
-                    "cost":""
+                    "name":"factions.alliance_of_ascendants.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.alliance_of_ascendants.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
                 }
             ],
-            "story":""
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
         }
     ],
     "lords": [
         {
-            "name":"",
+            "name":"factions.alliance_of_ascendants.lords.lord_1.name",
             "def":0,
             "hp":0,
             "dex":0,
-            "size":"",
-            "type":"",
+            "size":"fi.medium",
+            "type":"fi.life",
             "skills":[
                 {
-                    "name":"",
-                    "desc":"",
-                    "cost":""
+                    "name":"factions.alliance_of_ascendants.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.alliance_of_ascendants.lords.lord_1.skills.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.alliance_of_ascendants.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.alliance_of_ascendants.lords.lord_1.skills.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.alliance_of_ascendants.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.alliance_of_ascendants.lords.lord_1.skills.skill_1.desc",
+                    "cost":0
                 }
             ],
-            "story":""
+            "story":"factions.alliance_of_ascendants.lords.lord_1.story",
+            "img":"/images/the_emperor.png",
+            "head_img":"/images/the_emperor_head.png"
         }
     ],
     "cards": [
-{
-    "name":"",
-            "desc":"",
+        {
+            "name":"factions.alliance_of_ascendants.cards.card_1.name",
+            "desc":"factions.alliance_of_ascendants.cards.card_1.desc",
+            "img":"",
             "cost":0
         }
     ]

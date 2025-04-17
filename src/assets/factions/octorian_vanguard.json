@@ -1,17 +1,21 @@
 {
     "id":"octorian_vanguard",
     "img": "/images/octorian_vanguard.png",
+    "background_img": "/images/octorian_vanguard_background.png",
     "name": "factions.octorian_vanguard.name",
     "groupe":"solaris",
     "traits": [
         {
-            "name":"",
-            "effects": [
-                {
-                    "name":"",
-                    "desc":""
-                }
-            ]
+            "name":"factions.octorian_vanguard.traits.trait_1.name",
+            "effect":"factions.octorian_vanguard.traits.trait_1.effect"
+        },
+        {
+            "name":"factions.octorian_vanguard.traits.trait_2.name",
+            "effect":"factions.octorian_vanguard.traits.trait_2.effect"
+        },
+        {
+            "name":"factions.octorian_vanguard.traits.trait_3.name",
+            "effect":"factions.octorian_vanguard.traits.trait_3.effect"
         }
     ],
     "soldiers": [
@@ -20,41 +24,56 @@
             "def":0,
             "hp":0,
             "dex":0,
-            "size":"",
-            "type":"",
-            "cost":"",
+            "size":"fi.medium",
+            "type":"fi.life",
+            "cost":0,
             "skills": [
                 {
-                    "name":"",
-                    "desc":"",
-                    "cost":""
+                    "name":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.name",
+                    "desc":"factions.octorian_vanguard.soldiers.soldier_1.skill_1.desc",
+                    "cost":0
                 }
             ],
-            "story":""
+            "story":"",
+            "img":"",
+            "head_img":"/images/the_emperor_head.png"
         }
     ],
     "lords": [
         {
-            "name":"",
+            "name":"factions.octorian_vanguard.lords.lord_1.name",
             "def":0,
             "hp":0,
             "dex":0,
-            "size":"",
-            "type":"",
+            "size":"fi.medium",
+            "type":"fi.life",
             "skills":[
                 {
-                    "name":"",
-                    "desc":"",
-                    "cost":""
+                    "name":"factions.octorian_vanguard.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.octorian_vanguard.lords.lord_1.skills.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.octorian_vanguard.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.octorian_vanguard.lords.lord_1.skills.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.octorian_vanguard.lords.lord_1.skills.skill_1.name",
+                    "desc":"factions.octorian_vanguard.lords.lord_1.skills.skill_1.desc",
+                    "cost":0
                 }
             ],
-            "story":""
+            "story":"factions.octorian_vanguard.lords.lord_1.story",
+            "img":"/images/the_emperor.png",
+            "head_img":"/images/the_emperor_head.png"
         }
     ],
     "cards": [
         {
-            "name":"",
-            "desc":"",
+            "name":"factions.octorian_vanguard.cards.card_1.name",
+            "desc":"factions.octorian_vanguard.cards.card_1.desc",
+            "img":"",
             "cost":0
         }
     ]

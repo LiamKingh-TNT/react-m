@@ -70,7 +70,7 @@ export function FactionIntroContent(faction) {
                 backgroundColor: 'rgba(0,0,0,0.2)'
               }}
           />
-            <div className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[100vw] overflow-hidden">
+            <div id="traits" className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[100vw] overflow-hidden">
               <div className="w-full h-fit">
                 <div className="flex items-center justify-center">
                   <TitleText
@@ -83,9 +83,19 @@ export function FactionIntroContent(faction) {
                     height={1000}
                   />
                 </div>
-                <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-[70vw_3vw] grid-rows-4">
+                <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-[70vw_3vw] grid-rows-4 px-1 py-1">
                     <div className=" bg-[#815A5A]/50 border-8 border-[#73979F] row-span-4 min-h-fit">
-                      <p className="text-[#3E2F2F] z-50 ml-5 title overflow-visible text-[30px] md:text-[60px] font-extrabold" data-storke={lang(faction.faction.traits[selected_trait].name)}>{lang(faction.faction.traits[selected_trait].name)}</p>
+                      <TitleText
+                        text={lang(faction.faction.traits[selected_trait].name)}
+                        fontSize={40}
+                        strokeWidth={10}
+                        fill="#B5D7D7"
+                        strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+                        width={1000}
+                        height={1000}
+                        align="left"
+                      />
+                    
                       <p className="text-[20px] md:text-[30px] text-white ml-10">{lang(faction.faction.traits[selected_trait].effect)}</p>
                     </div>
                     {
@@ -108,7 +118,7 @@ export function FactionIntroContent(faction) {
                     })}
                 </div> 
               </div>
-              <div className="h-fit w-[100vw] mt-[250px] mx-auto md:mt-[150px]">
+              <div  id="lords" className="h-fit w-[100vw] mt-[250px] mx-auto md:mt-[150px]">
                     <div className="flex items-center justify-center">
                       <TitleText
                         text={lang('fi.lords')}
@@ -120,9 +130,9 @@ export function FactionIntroContent(faction) {
                         height={1000}
                       />
                     </div>
-                    <div className="info_frame max-h-fit min-h-[50vh] w-[100vw] absolute right-0 mr-[16px] md:w-[85vw] grid grid-cols-1 grid-rows-3 md:grid-cols-10 md:grid-rows-5 overflow-visible md:border-y-8">
+                    <div className="info_frame max-h-fit min-h-[25vh] md:min-h-[50vh] w-[100vw] absolute right-0 md:mr-[16px] md:w-[85vw] grid grid-cols-1 grid-rows-3 md:grid-cols-10 md:grid-rows-5 overflow-visible md:border-y-8">
 
-                      <div className="col-span-3 row-span-5 relative overflow-visible">
+                      <div className="col-span-3 row-span-5 relative overflow-visible z-0">
                         <img
                           src={faction.faction.lords[selected_lord].img}
                           className="absolute bottom-0 -top-[30vh] w-auto h-[80vh] object-contain"
@@ -144,9 +154,9 @@ export function FactionIntroContent(faction) {
                           height={1000}
                           align="left"
                         />
-                        <div className="text-[30px] text-white text-left mt-0">
+                        <div className="text-[25px] md:text-[30px] text-white text-left mt-0 z-20">
                           {lord_info===0 &&(
-                            <p className="text-[30px] text-white">
+                            <p className=" text-white">
                               {lang(faction.faction.lords[selected_lord].story)}
                             </p>
                           )}
@@ -169,6 +179,24 @@ export function FactionIntroContent(faction) {
                               </div>
                             </div>
                           )}
+                          {lord_info===2&&(
+                            <div className="flex flex-col w-full h-fit">
+                              {faction.faction.lords[selected_lord].skills.map((skill, index) => (
+                                <div key={lang(skill.name)} className="grid grid-cols-5 w-full h-fit">
+                                  <div className="col-span-2 text-right text-[#C4C4C4]">
+                                    <p>{lang(skill.name)}</p>
+                                  </div>
+                                  <div className="col-span-3 grid grid-rows-2 ml-2">
+                                    <p>{lang(skill.desc)}</p>
+                                    <div className="flex items-start w-full h-fit">
+                                      <p  className="text-right z-40 text-[#C4C4C4]">{lang('fi.cost')}</p>
+                                      <p  className="text-left">{lang(skill.cost)}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                       <div className="absolute top-80 md:top-1/2 right-0 -translate-y-1/2 flex flex-col space-y-0 z-50">
@@ -182,9 +210,13 @@ export function FactionIntroContent(faction) {
                           <img src="/images/skill.png" alt="icon" className="w-14 h-auto" />
                         </button>
                       </div>
+                      <div className="w-[60vw] bg-amber-800 h-fit absolute -bottom-30 left-[30vw] flex flex-wrap items-start justify-start gap-3">
+                        <div className="bg-amber-50 w-[6em] h-[6em]"></div>
+                        <div className="bg-amber-300 w-[6em] h-[6em]"></div>
+                      </div>
                     </div>
               </div>
-              <div className="mt-[100vh]"/>
+              <div className="mt-[200vh] md:mt-[150vh]"/>
               <div className="hidden md:flex flex-col fixed left-0 top-1/2 mt-15 ml-10 -translate-y-1/2 items-center justify-center w-[10vw]">
                 <button onClick={()=>scrollToWithOffset("traits")} className=" text-white text-[25px]">{lang('fi.traits')}</button>
                 <div className="h-10 w-[2px] bg-gray-300" />
