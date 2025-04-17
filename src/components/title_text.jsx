@@ -3,7 +3,7 @@ export default function GradientGameTitle({
   fontSize = 64, // ✅ 控制文字實際高度
   strokeWidth = 8,
   fill = "#2E2E30",
-  fontFamily = "Arial Black",
+  fontFamily = "'Jersey 25', sans-serif",
   gradientId = "strokeGradient",
   align = "center" // ✅ 新增對齊控制：'left' | 'center' | 'right'
 }) {
