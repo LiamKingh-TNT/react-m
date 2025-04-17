@@ -17,7 +17,9 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='story' element={<Story/>}/>
       <Route path='faction' element={<Faction/>}/>
-      <Route path='faction_intro' element={<FactionIntro/>}/>
+      <Route path='factions'>
+        <Route path=':faction_name' element={<FactionIntro/>}/>
+      </Route>
       <Route path='rule' element={<Rule/>}/>
     </Routes>
        

@@ -36,14 +36,14 @@ function Filter(){
             </div>
             <div className="grid grid-cols-3 gap-6 place-items-center w-[60vw] ml-[20vw]">
                 {filteredFactions.map((faction) => (
-                    <div key={lang(faction.name)} className="border p-4 rounded-lg shadow-lg w-fit h-fit"
-                     style={{ 
+                    <Link to={`/factions/${faction.id}`} key={lang(faction.name)} className="border p-4 rounded-lg shadow-lg w-fit h-fit"
+                        style={{ 
                             backdropFilter: 'blur(10px)',
                             backgroundColor: 'rgba(99, 99, 99, 0.41)'
                         }}>
                         <img src={faction.img} alt={faction.name} className="w-full h-64 object-contain mb-4 rounded-md" />
                         <h2 className="text-[clamp(1rem, 4vw, 2rem)] whitespace-nowrap text-white text-3xl text-center">{lang(faction.name)}</h2>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
