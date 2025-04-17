@@ -17,6 +17,15 @@ body {
    font-family: 'Jersey 25', sans-serif;
 }
 
+.info_frame{
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border-style:  solid;
+  border-color: transparent; /* 先設 transparent 才能疊 border-image */
+  border-image: linear-gradient(60deg, transparent 20%, #73979F 80%) 1;
+}
+
 .title::before {
   content: attr(data-storke);
 }

@@ -3,7 +3,18 @@
     "name": "factions.the_supreme_empire.name",
     "groupe":"solaris",
     "traits": [
-        ""
+        {
+            "name":"factions.the_supreme_empire.traits.trait_1.name",
+            "effect":"factions.the_supreme_empire.traits.trait_1.effect"
+        },
+        {
+            "name":"factions.the_supreme_empire.traits.trait_2.name",
+            "effect":"factions.the_supreme_empire.traits.trait_2.effect"
+        },
+        {
+            "name":"factions.the_supreme_empire.traits.trait_3.name",
+            "effect":"factions.the_supreme_empire.traits.trait_3.effect"
+        }
     ],
     "soldiers": [
         {
@@ -26,12 +37,12 @@
     ],
     "lords": [
         {
-            "name":"",
+            "name":"factions.the_supreme_empire.lords.lord_1.name",
             "def":0,
             "hp":0,
             "dex":0,
-            "size":"",
-            "type":"",
+            "size":"fi.medium",
+            "type":"fi.life",
             "skills":[
                 {
                     "name":"",
@@ -39,7 +50,8 @@
                     "cost":""
                 }
             ],
-            "story":""
+            "story":"factions.the_supreme_empire.lords.lord_1.story",
+            "img":"/images/the_emperor.png"
         }
     ],
     "cards": [

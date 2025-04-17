@@ -18,21 +18,31 @@
         "chaos":"渾沌",
         "selenyx":"濁月"
     },
+    "fi":{
+        "traits":"特性",
+        "lords":"領主",
+        "def":"防禦：",
+        "hp":"血量：",
+        "dex":"敏捷：",
+        "size":"體型：",
+        "type":"類型：",
+        "large":"大型",
+        "medium":"中型",
+        "small":"小型",
+        "machine":"器械",
+        "life":"生命",
+        "building":"建築"
+    },
     "factions": {
         "the_supreme_empire":{
             "img": "/images/the_supreme_empire.png",
             "name": "上京",
-            "traits": [
-                {
+            "traits": {
+                "trait_1":{
                     "name":"",
-                    "effects": [
-                        {
-                            "name":"",
-                            "desc":""
-                        }
-                    ]
+                    "effect":""
                 }
-            ],
+            },
             "soldiers": [
                 {
                     "name":"",
@@ -46,24 +56,18 @@
                     "story":""
                 }
             ],
-            "lords": [
-                {
-                    "name":"",
-                    "def":0,
-                    "hp":0,
-                    "dex":0,
-                    "size":"",
-                    "type":"",
+            "lords": {
+                "lord_1":{
+                    "name":"天帝",
                     "skills":[
                         {
                             "name":"",
-                            "desc":"",
-                            "cost":""
+                            "desc":""
                         }
                     ],
-                    "story":""
+                    "story":"空"
                 }
-            ],
+            },
             "cards": [
                 {
                     "name":"",

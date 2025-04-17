@@ -18,21 +18,31 @@
         "chaos":"Chaos",
         "selenyx":"Selenyx"
     },
+    "fi":{
+        "traits":"Traits",
+        "lords":"Lords",
+        "def":"DEF: ",
+        "hp":"HP: ",
+        "dex":"DEX: ",
+        "size":"SIZE: ",
+        "type":"TYPE: ",
+        "large":"Large",
+        "medium":"Medium",
+        "small":"Small",
+        "machine":"Machine",
+        "life":"Life",
+        "building":"Building"
+    },
     "factions": {
         "the_supreme_empire":{
             "img": "/images/the_supreme_empire.png",
             "name": "The Supreme Empire",
-            "traits": [
-                {
-                    "name":"",
-                    "effects": [
-                        {
-                            "name":"",
-                            "desc":""
-                        }
-                    ]
+            "traits": {
+                "trait_1":{
+                    "name":"Dawn Court",
+                    "effect":"At the start of each of your turns, if it is a Sun Year, gain 1 stack of [Imperial Reports].For each stack of [Imperial Reports], gain +2 additional AP. Maximum 5 stacks."
                 }
-            ],
+            },
             "soldiers": [
                 {
                     "name":"",
@@ -45,18 +55,18 @@
                     "story":""
                 }
             ],
-            "lords": [
-                {
-                    "name":"",
+            "lords": {
+                "lord_1":{
+                    "name":"The Emperor",
                     "skills":[
                         {
                             "name":"",
                             "desc":""
                         }
                     ],
-                    "story":""
+                    "story":"NULL"
                 }
-            ],
+            },
             "cards": [
                 {
                     "name":"",
