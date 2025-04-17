@@ -67,6 +67,34 @@
             "story":"factions.the_supreme_empire.lords.lord_1.story",
             "img":"/images/the_emperor.png",
             "head_img":"/images/the_emperor_head.png"
+        },
+        {
+            "name":"factions.the_supreme_empire.lords.lord_2.name",
+            "def":0,
+            "hp":0,
+            "dex":0,
+            "size":"fi.medium",
+            "type":"fi.life",
+            "skills":[
+                {
+                    "name":"factions.the_supreme_empire.lords.lord_2.skills.skill_1.name",
+                    "desc":"factions.the_supreme_empire.lords.lord_2.skills.skill_1.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.the_supreme_empire.lords.lord_2.skills.skill_2.name",
+                    "desc":"factions.the_supreme_empire.lords.lord_2.skills.skill_2.desc",
+                    "cost":0
+                },
+                {
+                    "name":"factions.the_supreme_empire.lords.lord_2.skills.skill_3.name",
+                    "desc":"factions.the_supreme_empire.lords.lord_2.skills.skill_3.desc",
+                    "cost":0
+                }
+            ],
+            "story":"factions.the_supreme_empire.lords.lord_2.story",
+            "img":"/images/the_emperor.png",
+            "head_img":"/images/the_emperor_head.png"
         }
     ],
     "cards": [
@@ -74,6 +102,7 @@
             "name":"factions.the_supreme_empire.cards.card_1.name",
             "desc":"factions.the_supreme_empire.cards.card_1.desc",
             "img":"",
+            "head_img":"/images/the_emperor_head.png",
             "cost":0
         }
     ]

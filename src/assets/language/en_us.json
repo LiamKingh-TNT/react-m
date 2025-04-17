@@ -21,6 +21,8 @@
     "fi":{
         "traits":"Traits",
         "lords":"Lords",
+        "soldiers":"Soldiers",
+        "cards":"Cards",
         "def":"DEF: ",
         "hp":"HP: ",
         "dex":"DEX: ",
