@@ -67,7 +67,7 @@ export default function GradientGameTitle({
           fill="none"
           fontFamily={fontFamily}
           strokeLinejoin="miter"
-          strokeMiterlimit={0}
+          strokeMiterlimit={2}
         >
           {text}
         </text>

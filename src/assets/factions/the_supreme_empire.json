@@ -20,7 +20,7 @@
     ],
     "soldiers": [
         {
-            "name":"",
+            "name":"factions.the_supreme_empire.soldiers.soldier_1.name",
             "def":3,
             "hp":8,
             "dex":1,
