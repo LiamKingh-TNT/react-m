@@ -47,7 +47,7 @@ export default function GradientGameTitle({
         className="block"
       >
         <defs>
-          <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id={gradientId} x1="0%" y1="0%" x2="80%" y2="80%">
             {strokeColors.map((stop, i) => (
               <stop key={i} offset={stop.offset} stopColor={stop.color} />
             ))}
