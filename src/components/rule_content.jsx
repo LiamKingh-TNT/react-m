@@ -224,20 +224,21 @@ export default function RuleContent(){
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.poison.desc_1')}</p>
                     <p className="">{lang('rule.effects.poison.desc_2')}</p>
+                    <p className="">{lang('rule.effects.poison.desc_3')}</p>
                 </div>
             </div>
           </div>
           <p className="mt-[40vh]"/>
           <div className="hidden md:flex flex-col fixed left-0 top-1/2 mt-15 ml-10 -translate-y-1/2 items-center justify-center w-[10vw]">
-            <button onClick={()=>scrollToWithOffset("target")} className=" text-white text-[25px]">{lang('rule.target.title')}</button>
+            <button onClick={()=>scrollToWithOffset("target")} className=" text-white text-[25px] hover:font-bold">{lang('rule.target.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("play")} className=" text-white text-[25px]">{lang('rule.play.title')}</button>
+            <button onClick={()=>scrollToWithOffset("play")} className=" text-white text-[25px] hover:font-bold">{lang('rule.play.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("damage_resolution")} className=" text-white text-[25px]">{lang('rule.damage_resolution.title')}</button>
+            <button onClick={()=>scrollToWithOffset("damage_resolution")} className=" text-white text-[25px] hover:font-bold">{lang('rule.damage_resolution.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("terrain")} className=" text-white text-[25px]">{lang('rule.terrain.title')}</button>
+            <button onClick={()=>scrollToWithOffset("terrain")} className=" text-white text-[25px] hover:font-bold">{lang('rule.terrain.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("effects")} className=" text-white text-[25px]">{lang('rule.effects.title')}</button>
+            <button onClick={()=>scrollToWithOffset("effects")} className=" text-white text-[25px] hover:font-bold">{lang('rule.effects.title')}</button>
             </div>
         </div>
     )

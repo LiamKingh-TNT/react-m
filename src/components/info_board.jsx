@@ -31,7 +31,7 @@ export function InfoBoard({faction, type="lord"}){
                 <div className="col-span-3 row-span-5 relative overflow-visible z-0">
                 <img
                     src={obj[selected].img}
-                    className="absolute bottom-0 -top-[30vh] w-auto h-[80vh] object-contain"
+                    className="absolute md:left-40 bottom-0 -top-[30vh] w-auto h-[80vh] object-contain"
                     style={{
                     maskImage: `radial-gradient(circle at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 80%)`,
                     WebkitMaskImage: `radial-gradient(circle at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 80%)`,
@@ -68,7 +68,7 @@ export function InfoBoard({faction, type="lord"}){
                     </p>
                     )}
                     {(info===1 && type!="cards")&&(
-                    <div className="grid grid-cols-6 w-full h-fit">
+                    <div className="grid grid-cols-3 w-full h-fit">
                         <div className="col-span-1 text-right text-[#C4C4C4]">
                         <p>{lang('fi.hp')}</p>
                         <p>{lang('fi.def')}</p>
