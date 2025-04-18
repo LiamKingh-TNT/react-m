@@ -191,9 +191,53 @@
                     "effect":""
                 }
             },
-            "soldiers": [
-                {
-                    "name":"",
+            "soldiers": {
+                "soldier_1":{
+                    "name":"龍紋甲兵",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_2":{
+                    "name":"虎袍力士",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_3":{
+                    "name":"金龍戰車",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_4":{
+                    "name":"影衛",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_5":{
+                    "name":"皂旗將軍",
                     "skills": [
                         {
                             "name":"",
@@ -203,7 +247,7 @@
                     ],
                     "story":""
                 }
-            ],
+            },
             "lords": {
                 "lord_1":{
                     "name":"天帝",
@@ -226,13 +270,13 @@
                     "story":"空"
                 }
             },
-            "cards": [
-                {
+            "cards": {
+                "card_1":{
                     "name":"",
                     "desc":"",
                     "cost":0
                 }
-            ]
+            }
         },
         "ecclesia_of_luca":{
             "img":"/images/ecclesia_of_luca.png",
@@ -247,15 +291,53 @@
                     "effect":""
                 }
             },
-            "soldiers": [
-                {
-                    "name":"",
-                    "def":0,
-                    "hp":0,
-                    "dex":0,
-                    "size":"",
-                    "type":"",
-                    "cost":"",
+            "soldiers": {
+                "soldier_1":{
+                    "name":"神恩騎士",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_2":{
+                    "name":"戰爭修女",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_3":{
+                    "name":"月光審判者",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_4":{
+                    "name":"新月苦修士",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_5":{
+                    "name":"月神投影",
                     "skills": [
                         {
                             "name":"",
@@ -265,25 +347,29 @@
                     ],
                     "story":""
                 }
-            ],
-            "lords": [
-                {
-                    "name":"",
-                    "def":0,
-                    "hp":0,
-                    "dex":0,
-                    "size":"",
-                    "type":"",
+            },
+            "lords": {
+                "lord_1":{
+                    "name":"教皇-萊門",
                     "skills":[
                         {
                             "name":"",
-                            "desc":"",
-                            "cost":""
+                            "desc":""
                         }
                     ],
-                    "story":""
+                    "story":"空"
+                },
+                "lord_2":{
+                    "name":"聖女-露娜",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ],
+                    "story":"空"
                 }
-            ],
+            },
             "cards": [
                 {
                     "name":"",
@@ -301,43 +387,85 @@
                 "effect":""
             }
         },
-          "soldiers": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "cost":"",
-                  "skills": [
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
-          "lords": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "skills":[
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
+        "soldiers": {
+            "soldier_1":{
+                "name":"屠殺者",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_2":{
+                "name":"陽焰炮手",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_3":{
+                "name":"構築者",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_4":{
+                "name":"風暴浮游艇",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_5":{
+                "name":"2333高裝甲自走炮",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            }
+        },
+          "lords": {
+            "lord_1":{
+                "name":"行星總督-丹尼爾",
+                "skills":[
+                    {
+                        "name":"",
+                        "desc":""
+                    }
+                ],
+                "story":"空"
+            },
+            "lord_2":{
+                "name":"戰爭主腦-薩拉托加",
+                "skills":[
+                    {
+                        "name":"",
+                        "desc":""
+                    }
+                ],
+                "story":"空"
+            }
+        },
           "cards": [
               {
                   "name":"",
@@ -359,43 +487,85 @@
                 "effect":"不受飢荒卡影響"
             }
         },
-          "soldiers": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "cost":"",
-                  "skills": [
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
-          "lords": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "skills":[
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
+          "soldiers": {
+            "soldier_1":{
+                "name":"焚滅者",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_2":{
+                "name":"突擊者",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_3":{
+                "name":"蓋亞坦克",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_4":{
+                "name":"芬尼克斯轟炸機",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            },
+            "soldier_5":{
+                "name":"戰爭泰坦",
+                "skills": [
+                    {
+                        "name":"",
+                        "desc":"",
+                        "cost":""
+                    }
+                ],
+                "story":""
+            }
+        },
+        "lords": {
+            "lord_1":{
+                "name":"大技師-EoM-224573",
+                "skills":[
+                    {
+                        "name":"",
+                        "desc":""
+                    }
+                ],
+                "story":"空"
+            },
+            "lord_2":{
+                "name":"技械冠軍-MoC-1996543",
+                "skills":[
+                    {
+                        "name":"",
+                        "desc":""
+                    }
+                ],
+                "story":"空"
+            }
+        },
           "cards": [
               {
                   "name":"",
@@ -421,43 +591,85 @@
                 "effect":""
                 }
             },
-          "soldiers": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "cost":"",
-                  "skills": [
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
-          "lords": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "skills":[
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
+            "soldiers": {
+                "soldier_1":{
+                    "name":"渴血者",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_2":{
+                    "name":"血僕",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_3":{
+                    "name":"鮮血騎士",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_4":{
+                    "name":"腥紅爵士",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                },
+                "soldier_5":{
+                    "name":"緋色大公",
+                    "skills": [
+                        {
+                            "name":"",
+                            "desc":"",
+                            "cost":""
+                        }
+                    ],
+                    "story":""
+                }
+            },
+          "lords": {
+            "lord_1":{
+                "name":"血祖-艾莉西亞",
+                "skills":[
+                    {
+                        "name":"",
+                        "desc":""
+                    }
+                ],
+                "story":"空"
+            },
+            "lord_2":{
+                "name":"鮮血侍女-莉莉絲",
+                "skills":[
+                    {
+                        "name":"",
+                        "desc":""
+                    }
+                ],
+                "story":"空"
+            }
+        },
           "cards": [
               {
                   "name":"",
