@@ -17,7 +17,7 @@ function Intro() {
   console.log(factions);
   return (
         <div className="content relative z-20 ">
-          <div className="flex items-center justify-center h-screen">
+          <div className="flex items-center justify-center  h-[80vh]">
             <TitleText
               text={lang('title')}
               fontSize={100}
@@ -28,6 +28,7 @@ function Intro() {
               height={1200}
             />
           </div>
+          <p className="mt-[10vh]"/>
           <BackgroundBlur/>
           <div className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[90vw] overflow-hidden">
             <ImageTextSection

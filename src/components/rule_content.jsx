@@ -45,7 +45,7 @@ export default function RuleContent(){
                 <p className="ml-[5vw]">{lang('rule.target.annihilation.desc')}</p>
             </div>
           </div>
-          <div id="play" className=" md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] mt-[40vh] text-start md:px-[4em] border-y-8 border-[#73979F]">
+          <div id="play" className=" md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[4em] border-y-8 border-[#73979F]">
             <TitleText
                 text={lang('rule.play.title')}
                 fontSize={60}

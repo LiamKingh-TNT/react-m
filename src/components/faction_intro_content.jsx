@@ -38,7 +38,7 @@ export function FactionIntroContent(faction) {
       };
     return(
         <div className="content relative z-20 overflow-x-hidden">
-          <div className="flex items-center justify-center h-screen">
+          <div className="flex items-center justify-center  h-[80vh]">
             <TitleText
               text={lang(faction.faction.name)}
               fontSize={100}
@@ -49,6 +49,7 @@ export function FactionIntroContent(faction) {
               height={1200}
             />
           </div>
+          <p className="mt-[10vh]"/>
           <BackgroundBlur/>
             <div id="traits" className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[100vw] overflow-hidden">
               <div className="w-full h-fit">
