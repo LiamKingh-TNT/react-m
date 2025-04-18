@@ -108,7 +108,6 @@ export default function RuleContent(){
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_17')}</p>
                     <p className="ml-[5vw] text-[#C4C4C4]">{lang('rule.play.game.desc_18')}</p>
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_19')}</p>
-                    <p className="ml-[5vw]">{lang('rule.play.game.desc_20')}</p>
                 </div>
             </div>
           </div>

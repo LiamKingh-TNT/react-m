@@ -100,11 +100,8 @@ export function FactionIntroContent(faction) {
               </div>
               
               <InfoBoard faction={faction.faction} type="lord"/>
-              <div className="mt-[200vh] md:mt-[100vh]"/>
               <InfoBoard faction={faction.faction} type="soldier"/>
-              <div className="mt-[200vh] md:mt-[100vh]"/>
               <InfoBoard faction={faction.faction} type="card"/>
-              <div className="mt-[200vh] md:mt-[150vh]"/>
               <div className="hidden md:flex flex-col fixed left-0 top-1/2 mt-15 ml-10 -translate-y-1/2 items-center justify-center w-[10vw]">
                 <button onClick={()=>scrollToWithOffset("traits")} className=" text-white text-[25px]">{lang('fi.traits')}</button>
                 <div className="h-10 w-[2px] bg-gray-300" />

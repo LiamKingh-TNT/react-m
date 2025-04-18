@@ -13,9 +13,25 @@ function Header() {
   
   const menuRef = useRef(null)
   useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setListIsOpen(false);
+      }
+    };
+  
+    // 初次掛載時檢查
+    if (window.innerWidth >= 768) {
+      setListIsOpen(false);
+    }
+  
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  useEffect(() => {
     const el = menuRef.current
     if (!el) return
-  
+    
+
     if (listIsOpen) {
       el.style.display = 'block'
       gsap.fromTo(
@@ -66,7 +82,7 @@ function Header() {
           <div 
           ref={menuRef}
           style={{ height: 0, opacity: 0, overflow: 'hidden', display: 'none' }}
-          className="fixed list top-[100px] left-0 w-screen z-30 text-white text-[25px] py-4 px-6 shadow-md space-y-4 text-center md:hidden"
+          className="fixed list top-[100px] left-0 w-screen z-0 text-white text-[25px] py-4 px-6 shadow-md space-y-4 text-center md:hidden"
           >
             <Link to="/story" className="block mt-[40px]">{lang('menu.background')}</Link>
             <Link to="/faction" className="block">{lang('menu.component')}</Link>
