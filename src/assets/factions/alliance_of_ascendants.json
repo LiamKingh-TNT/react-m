@@ -3,7 +3,7 @@
     "img": "/images/alliance_of_ascendants.png",
     "background_img": "/images/alliance_of_ascendants_background.png",
     "name": "factions.alliance_of_ascendants.name",
-    "groupe":"solaris",
+    "groupe":"chaos",
     "traits": [
         {
             "name":"factions.alliance_of_ascendants.traits.trait_1.name",

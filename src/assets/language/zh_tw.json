@@ -17,8 +17,143 @@
         "chaos":"渾沌",
         "selenyx":"濁月"
     },
-    "rule":{
-        "title":"遊戲規則"
+"rule":{
+        "title":"遊戲規則",
+        "round":"回合",
+        "ap":"AP",
+        "action_point":"行動點",
+        "target":{
+            "title":"遊戲目標",
+            "conquer":{
+                "name":"佔領模式",
+                "desc":"使己方士兵存在佔領點周圍6格內持續3回合"
+            },
+            "annihilation":{
+                "name":"殲滅模式",
+                "desc":"擊殺敵方領主"
+            }
+        },
+        "play":{
+            "title":"玩法",
+            "init":{
+                "name":"初始階段",
+                "desc_1":"所有玩家一各自投擲骰子，最後將點數相加",
+                "desc_2":"基數則第一回合定位日年",
+                "desc_3":"偶數則第一回合定位月年",
+                "desc_4":"之後每回合循環往復",
+                "desc_5":"玩家各自選擇自己的陣營，並將領主放置在各自的初始點",
+                "desc_6":"可根據規則書布置戰場，也可自行布置"
+            },
+            "game":{
+                "name":"遊戲階段",
+                "desc_1":"從第一個玩家開始行動，到最後一個玩家行動完畢視為一輪，同時稱作「年」",
+                "desc_2":"一位玩家的行動結束到他下次行動視為經過一回合",
+                "desc_3":"每輪玩家會獲得對應回合數的行動點:",
+                "desc_4":"在本回合輪到該玩家時，玩家可使用自己的行動點進行操作，做出以下行動：",
+                "desc_5":"抽卡",
+                "desc_6":"可消耗2 AP抽一張世界卡",
+                "desc_7":"可消耗3 AP抽一張自己的勢力卡",
+                "desc_8":"Cards drawn may be World Cards or Faction Cards.",
+                "desc_9":"兵棋召喚",
+                "desc_10":"選擇兵棋召喚在領主相鄰的空地",
+                "desc_11":"根據你要召喚的兵棋消耗相應的行動點",
+                "desc_12":"單位行動",
+                "desc_13":"每個單位可以做以下的行動",
+                "desc_14":"使用技能:",
+                "desc_15":"根據技能描述消耗行動點施放，每個技能每回合只能使用一次",
+                "desc_16":"移動:",
+                "desc_17":"單位每有1點速度可移動一格，每回合一個單位只能進行一次移動",
+                "desc_18":"衝刺:",
+                "desc_19":"將移動距離變為速度+1D3，衝刺帶有力竭效果"
+            }
+        },
+        "damage_resolution":{
+            "title":"進攻",
+            "hit_check":{
+                "name":"命中判定",
+                "desc_1":"如果攻擊不帶有必中效果，骰1D6來判定是否命中",
+                "desc_2":"(受攻擊單位的速度 [最大值為 6] + 受攻擊單位的傷害豁免 + 3 - 進攻單位的命中) ≤ 骰子點數"
+            },
+            "damege_calculation":{
+                "name":"傷害計算",
+                "desc_1":"如果攻擊命中，傷害計算方式如下",
+                "desc_2":"實際傷害 = 傷害 − (受攻擊單位防禦力 − 破甲) [如果結果 < 0, 視同 0]",
+                "desc_3":"剩餘血量 = 血量 − 實際傷害",
+                "desc_4":"如果單位的血量降至0或以下，則視為戰敗，並且從戰鬥場上移除"
+            }
+        },
+        "terrain":{
+            "title":"地形",
+            "general":{
+                "name":"放置規則",
+                "desc_1":"地形可以被放置在任何一個空地上",
+                "desc_2":"佔點模式下佔領點周圍一格不可放置地形"
+            },
+            "mountains":{
+                "name":"山峰",
+                "desc_1":"可放置在水域和峽谷上",
+                "desc_2":"放置時，如果放置的位置原本為水域或峽谷，則互相抵銷，變為空地",
+                "desc_3":"任何單位都不可通過",
+                "desc_4":"可阻擋直射技能"
+            },
+            "canyon":{
+                "name":"峽谷",
+                "desc_1":"可放置在山峰上",
+                "desc_2":"放置時，如果放置的位置原本為山峰，則互相抵銷，變為空地",
+                "desc_3":"小型單位可以躲在峽谷裡",
+                "desc_4":"若峽谷遭到破壞則躲藏在峽谷內的單位會受到1D6點必中真實傷害"
+            },
+            "water":{
+                "name":"水域",
+                "desc_1":"兵棋踏上水域時會強制移動到水域末端周圍一格空地上",
+                "desc_2":"放置在峽谷周圍一格時會同化峽谷為水域"
+            }
+        },
+        "effects":{
+            "title":"效果",
+            "rush":{
+                "name":"突進",
+                "desc_1":"受攻擊的單位須朝攻擊範圍外位移一格",
+                "desc_2":"若無法位移則受到雙倍傷害，並使突進者立即停止"
+            },
+            "multi_strike":{
+                "name":"連擊",
+                "desc_1":"進行多次攻擊",
+                "desc_2":"每次攻擊都需要檢定"
+            },
+            "burn":{
+                "name":"Burn",
+                "desc_1":"Deals 2 true damage at the start of each action.",
+                "desc_2":"Reduces Burn stacks by 1 per activation.",
+                "desc_3":"Units affected by Burn suffer -2 Defense."
+            },
+            "teleport":{
+                "name":"Teleport",
+                "desc_1":"The target location must be at least 3 tiles away from all enemy units."
+            },
+            "stun":{
+                "name":"Stun",
+                "desc_1":"A stunned unit cannot act, and all attacks automatically hit.",
+                "desc_2":"At the end of its turn, it may roll 1d6 against Difficulty X to recover.",
+                "desc_3":"X = remaining stun stacks.",
+                "desc_4":"Stun stacks decrease by 1 at the end of each turn."
+            },
+            "exhausted":{
+                "name":"Exhausted",
+                "desc_1":"This action cannot be used if any other action has been taken this turn.",
+                "desc_2":"After using an Exhausted action, no further actions may be taken this turn."
+            },
+            "armor_break":{
+                "name":"Armor Break",
+                "desc_1":"Each stack of Armor Break reduces Defense by 1."
+            },
+            "poison":{
+                "name":"Poison",
+                "desc_1":"Deals 1 true damage at the start of each action.",
+                "desc_2":"Reduces Poison stacks by 1 per activation.",
+                "desc_3":"Units affected by Poison suffer -3 Damage and -1 Speed."
+            }
+        }
     },
     "fi":{
         "traits":"特性",

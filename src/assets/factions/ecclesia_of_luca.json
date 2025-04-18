@@ -3,7 +3,7 @@
     "img": "/images/ecclesia_of_luca.png",
     "background_img": "/images/ecclesia_of_luca_background.png",
     "name": "factions.ecclesia_of_luca.name",
-    "groupe":"solaris",
+    "groupe":"selenyx",
     "traits": [
         {
             "name":"factions.ecclesia_of_luca.traits.trait_1.name",
