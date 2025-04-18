@@ -9,7 +9,9 @@ function Header() {
   const toggleLang = () => {
     const newLang = setLanguage.language === 'en_us' ? 'zh_tw' : 'en_us'
     setLanguage.changeLanguage(newLang)
+    localStorage.setItem('lang', newLang)  // ✅ 儲存語言設定
   }
+  
   
   const menuRef = useRef(null)
   useEffect(() => {
