@@ -165,7 +165,6 @@ export default function RuleContent(){
                     <p className="">{lang('rule.terrain.canyon.desc_2')}</p>
                     <p className="">{lang('rule.terrain.canyon.desc_3')}</p>
                     <p className="">{lang('rule.terrain.canyon.desc_4')}</p>
-                    <p className="">{lang('rule.terrain.canyon.desc_5')}</p>
                 </div>
                 <p className="text-[#C4C4C4]">{lang('rule.terrain.water.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">

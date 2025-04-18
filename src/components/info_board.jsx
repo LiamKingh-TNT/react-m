@@ -91,7 +91,7 @@ export function InfoBoard({faction, type="lord"}){
                     {(info===2 && type!="cards")&&(
                     <div className="flex flex-col w-full h-fit">
                         {obj[selected].skills.map((skill) => (
-                        <div key={lang(skill.name)} className="grid grid-cols-5 w-full h-fit">
+                        <div key={lang(skill.name)} className="grid grid-cols-5 w-full h-fit ">
                             <div className="col-span-2 text-right text-[#C4C4C4]">
                             <p>{lang(skill.name)}</p>
                             </div>
@@ -109,13 +109,13 @@ export function InfoBoard({faction, type="lord"}){
                 </div>
                 </div>
                 {type!="card"? <div className="absolute top-80 md:top-1/2 right-0 -translate-y-1/2 flex flex-col space-y-0 z-50">
-                    <button onClick={()=>SetInfo(0)} className={`w-16 h-16 bg-[${info==0?"#7FA4AA":"#44646B"}] rounded-l-md flex items-center justify-center`}>
+                    <button onClick={()=>SetInfo(0)} className={`w-16 h-16 bg-[${info==0?"#7FA4AA":"#44646B"}] hover:bg-[#7FA4AA] rounded-l-md flex items-center justify-center`}>
                         <img src="/images/open-book.png" alt="icon" className="w-14 h-auto" />
                     </button>
-                    <button onClick={()=>SetInfo(1)} className={`w-16 h-16 bg-[${info==1?"#7FA4AA":"#44646B"}] rounded-l-md flex items-center justify-center`}>
+                    <button onClick={()=>SetInfo(1)} className={`w-16 h-16 bg-[${info==1?"#7FA4AA":"#44646B"}] hover:bg-[#7FA4AA] rounded-l-md flex items-center justify-center`}>
                         <img src="/images/features.png" alt="icon" className="w-14 h-auto" />
                     </button>
-                    <button onClick={()=>SetInfo(2)} className={`w-16 h-16 bg-[${info==2?"#7FA4AA":"#44646B"}] rounded-l-md flex items-center justify-center`}>
+                    <button onClick={()=>SetInfo(2)} className={`w-16 h-16 bg-[${info==2?"#7FA4AA":"#44646B"}] hover:bg-[#7FA4AA] rounded-l-md flex items-center justify-center`}>
                         <img src="/images/skill.png" alt="icon" className="w-14 h-auto" />
                     </button>
                 </div>:<></>}
@@ -124,7 +124,7 @@ export function InfoBoard({faction, type="lord"}){
             <div className="w-[60vw] h-fit relative mt-10 left-[30vw] flex flex-wrap items-start justify-start gap-3">
                 {obj.map((lord, index) =>{
                     return(
-                    <button onClick={()=>SetSelected(index)} className={` w-[6em] h-[6em] border-4 border-[${selected==index?"#7FA4AA":"#44646B"}]`}>
+                    <button onClick={()=>SetSelected(index)} className={` w-[6em] h-[6em] hover:border-[#7FA4AA] border-4 border-[${selected==index?"#7FA4AA":"#44646B"}]`}>
                     <img src={lord.head_img} alt="icon" className="w-full h-full" />
                     </button>
                 )})}

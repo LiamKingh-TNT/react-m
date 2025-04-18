@@ -63,8 +63,8 @@ export function FactionIntroContent(faction) {
                     height={1000}
                   />
                 </div>
-                <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-[70vw_3vw] grid-rows-4 px-1 py-1">
-                    <div className=" bg-[#815A5A]/50 border-8 border-[#73979F] row-span-4 min-h-fit">
+                <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-[70vw_3vw] grid-rows-8 px-1 py-1">
+                    <div className=" bg-[#815A5A]/50 border-8 border-[#73979F] row-span-8 min-h-fit">
                       <TitleText
                         text={lang(faction.faction.traits[selected_trait].name)}
                         fontSize={40}
