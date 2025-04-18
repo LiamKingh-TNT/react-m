@@ -1,6 +1,5 @@
 {
     "title": "虛妄王座",
-    "title2": "-虛妄王座-",
     "menu": {
       "background": "故事背景",
       "component": "遊戲物件",
@@ -17,6 +16,9 @@
         "solaris":"耀陽",
         "chaos":"渾沌",
         "selenyx":"濁月"
+    },
+    "rule":{
+        "title":"遊戲規則"
     },
     "fi":{
         "traits":"特性",

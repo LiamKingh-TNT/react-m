@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import ImageTextSection from './image_text_sction';
 import factions from '@/assets/factions'
 import BackgroundBlur from './background_blur';
+import TitleText from './title_text'
 function Intro() {
   const { t:lang } = useTranslation();
   const [index, setIndex] = useState(0)
@@ -17,7 +18,15 @@ function Intro() {
   return (
         <div className="content relative z-20 ">
           <div className="flex items-center justify-center h-screen">
-            <p className="text-[#3E2F2F] z-50 mt-[-10vh] title overflow-visible text-[8vw] font-extrabold" data-storke={lang('title2')}>{lang('title2')}</p>
+            <TitleText
+              text={lang('title')}
+              fontSize={100}
+              strokeWidth={40}
+              fill="#3E2F2F"
+              strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+              width={1600}
+              height={1200}
+            />
           </div>
           <BackgroundBlur/>
           <div className="pt-20 relative z-[0] w-[100vw] h-full mt-[0vh] mx-auto md:w-[90vw] overflow-hidden">

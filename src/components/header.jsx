@@ -46,7 +46,7 @@ function Header() {
             <nav className="hidden ml-5 md:flex gap-8 text-white text-[20px] ">
               <Link to="/story" className="nav-underline-center select-none">{lang('menu.background')}</Link>
               <Link to="/faction" className="nav-underline-center select-none">{lang('menu.component')}</Link>
-              <Link to="/rule" className="nav-underline-center select-none">{lang('menu.rules')}</Link>
+              <Link to="/rules" className="nav-underline-center select-none">{lang('menu.rules')}</Link>
             </nav>
             
           </div>
@@ -70,7 +70,7 @@ function Header() {
           >
             <Link to="/story" className="block mt-[40px]">{lang('menu.background')}</Link>
             <Link to="/faction" className="block">{lang('menu.component')}</Link>
-            <Link to="/rule" className="block">{lang('menu.rules')}</Link>
+            <Link to="/rules" className="block">{lang('menu.rules')}</Link>
             <button className="block text-center text-[25px] w-full" onClick={toggleLang}>{lang('menu.language')}</button>
             <button className="absolute right-2 bottom-0 text-[20px] w-[30px] h-auto md:hidden" onClick={() => setListIsOpen(!listIsOpen)}><img src="/images/down-chevron.png" className="transform scale-y-[-1] right-0"/></button>
             <br/>

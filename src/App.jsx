@@ -4,7 +4,7 @@ import Home from "./pages/home"
 import Story from './pages/story';
 import Faction from './pages/faction';
 import FactionIntro from './pages/faction_intro';
-import Rule from './pages/rule';
+import Rules from './pages/rules';
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -17,10 +17,10 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='story' element={<Story/>}/>
       <Route path='faction' element={<Faction/>}/>
+      <Route path='rules' element={<Rules/>}/>
       <Route path='factions'>
         <Route path=':faction_name' element={<FactionIntro/>}/>
       </Route>
-      <Route path='rule' element={<Rule/>}/>
     </Routes>
        
     </BrowserRouter>

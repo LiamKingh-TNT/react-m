@@ -1,6 +1,5 @@
 {
     "title": "The Throne of Delusion",
-    "title2": "-The Throne of Delusion-",
     "menu": {
       "background": "Background Story",
       "component": "Game Component",
@@ -17,6 +16,58 @@
         "solaris":"Solaris",
         "chaos":"Chaos",
         "selenyx":"Selenyx"
+    },
+    "rule":{
+        "title":"Rule",
+        "round":"Round",
+        "ap":"AP",
+        "action_point":"Action Point",
+        "target":{
+            "title":"Target",
+            "conquer":{
+                "name":"Conquer",
+                "desc":"Maintain a friendly unit within 6 spaces of a capture point for 3 consecutive turns."
+            },
+            "annihilation":{
+                "name":"Annihilation",
+                "desc":"Eliminate all the enemy lord."
+            }
+        },
+        "play":{
+            "title":"Play",
+            "init":{
+                "name":"Start Phase",
+                "desc_1":"All players each roll a die and sum the results.",
+                "desc_2":"If the total is odd, the first round is designated as a Sun Year.",
+                "desc_3":"If the total is even, the first round is designated as a Moon Year.",
+                "desc_4":"The year type then alternates each round thereafter.",
+                "desc_5":"Each player selects a faction and places their Lord on their respective starting position.",
+                "desc_6":"The battlefield can be arranged according to the rulebook or customized freely by the players."
+            },
+            "game":{
+                "name":"Game Phase",
+                "desc_1":"A Round (also referred to as a Year) begins with the first player and continues until the last player has completed their turn.",
+                "desc_2":"The time between a player’s current turn and their next turn is referred to as a Turn.",
+                "desc_3":"At the beginning of each turn, players gain action points based on the current round number:",
+                "desc_4":"When it is your turn in the round, you may spend your action points (AP) to perform any of the following actions:",
+                "desc_5":"Draw Cards",
+                "desc_6":"Spend 2 AP to draw a card from the Central Deck (shared).",
+                "desc_7":"Spend 3 AP to draw a card from your Faction Deck.",
+                "desc_8":"Cards drawn may be World Cards or Faction Cards.",
+                "desc_9":"Summon Units",
+                "desc_10":"Choose a unit to summon.",
+                "desc_11":"Pay the required AP cost stated on the unit.",
+                "desc_12":"Unit Actions",
+                "desc_13":"Each unit can take the following actions:",
+                "desc_14":"Use Skill:",
+                "desc_15":"Consume the amount of AP listed in the skill description. Each skill may only be used once per turn.",
+                "desc_16":"Move:",
+                "desc_17":"A unit may move once per turn. It moves 1 tile per point of Speed.",
+                "desc_18":"Dash:",
+                "desc_19":"Move distance becomes Speed + 1D3.",
+                "desc_20":"Dash causes the unit to become Exhausted."
+            }
+        }
     },
     "fi":{
         "traits":"Traits",
