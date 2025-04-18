@@ -133,25 +133,25 @@
             },
             "stun":{
                 "name":"暈眩",
-                "desc_1":"單位無法行動，且受到的任何攻擊皆視為必中",
-                "desc_2":"At the end of its turn, it may roll 1d6 against Difficulty X to recover.",
-                "desc_3":"X = remaining stun stacks.",
-                "desc_4":"Stun stacks decrease by 1 at the end of each turn."
+                "desc_1":"具有該效果的單位無法行動，且受到的任何攻擊皆視為必中",
+                "desc_2":"到你的回合時，暈眩單位可進行1D6難度X的檢定，通過則立即清醒",
+                "desc_3":"X = 剩餘暈眩層數",
+                "desc_4":"每回合暈眩自動減少一層"
             },
             "exhausted":{
-                "name":"Exhausted",
-                "desc_1":"This action cannot be used if any other action has been taken this turn.",
-                "desc_2":"After using an Exhausted action, no further actions may be taken this turn."
+                "name":"力竭",
+                "desc_1":"執行其他行動後，就不能執行附帶該效果的行動",
+                "desc_2":"執行附帶該效果的行動後，不能執行其他行動"
             },
             "armor_break":{
-                "name":"Armor Break",
-                "desc_1":"Each stack of Armor Break reduces Defense by 1."
+                "name":"破甲",
+                "desc_1":"每一點破甲效果降低1防禦"
             },
             "poison":{
-                "name":"Poison",
-                "desc_1":"Deals 1 true damage at the start of each action.",
-                "desc_2":"Reduces Poison stacks by 1 per activation.",
-                "desc_3":"Units affected by Poison suffer -3 Damage and -1 Speed."
+                "name":"劇毒",
+                "desc_1":"具有該效果的單位每次行動時會造成一次1點的必中真實傷害",
+                "desc_2":"每次行動後減少一層劇毒",
+                "desc_3":"具有該效果的單位傷害-3、速度-1"
             }
         }
     },
