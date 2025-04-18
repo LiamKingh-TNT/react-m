@@ -93,7 +93,7 @@
                 "name":"Mountains",
                 "desc_1":"Can be placed on Water or Canyon tiles.",
                 "desc_2":"When placed, both the Mountain and the underlying tile are removed, converting the tile into normal ground.",
-                "desc_3":"If placed adjacent to a Water tile, it is converted into Water.",
+                "desc_3":"Impassable for all units.",
                 "desc_4":"Blocks line-of-sight and direct-targeting skills."
             },
             "canyon":{

@@ -63,8 +63,8 @@ export function FactionIntroContent(faction) {
                     height={1000}
                   />
                 </div>
-                <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-[70vw_3vw] grid-rows-4 px-1 py-1">
-                    <div className=" bg-[#815A5A]/50 border-8 border-[#73979F] row-span-4 min-h-fit">
+                <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-[70vw_3vw] grid-rows-8 px-1 py-1">
+                    <div className=" bg-[#815A5A]/50 border-8 border-[#73979F] row-span-8 min-h-fit">
                       <TitleText
                         text={lang(faction.faction.traits[selected_trait].name)}
                         fontSize={40}
@@ -100,11 +100,8 @@ export function FactionIntroContent(faction) {
               </div>
               
               <InfoBoard faction={faction.faction} type="lord"/>
-              <div className="mt-[200vh] md:mt-[100vh]"/>
               <InfoBoard faction={faction.faction} type="soldier"/>
-              <div className="mt-[200vh] md:mt-[100vh]"/>
               <InfoBoard faction={faction.faction} type="card"/>
-              <div className="mt-[200vh] md:mt-[150vh]"/>
               <div className="hidden md:flex flex-col fixed left-0 top-1/2 mt-15 ml-10 -translate-y-1/2 items-center justify-center w-[10vw]">
                 <button onClick={()=>scrollToWithOffset("traits")} className=" text-white text-[25px]">{lang('fi.traits')}</button>
                 <div className="h-10 w-[2px] bg-gray-300" />

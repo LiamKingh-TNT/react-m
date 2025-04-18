@@ -14,7 +14,7 @@ export default function RuleContent(){
       };
     return(
         <div className="content relative z-20 ">
-          <div className="flex items-center justify-center h-screen">
+          <div className="flex items-center justify-center h-[80vh]">
            <TitleText
                 text={lang('rule.title')}
                 fontSize={100}
@@ -25,6 +25,7 @@ export default function RuleContent(){
                 height={1200}
             />
           </div>
+          <p className="mt-[10vh]"/>
           <BackgroundBlur/>
           <div id="target" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
             <TitleText
@@ -96,7 +97,6 @@ export default function RuleContent(){
                     <p className="ml-[4vw] font-bold text-[#C4C4C4] text-[35px]">{lang('rule.play.game.desc_5')}</p>
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_6')}</p>
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_7')}</p>
-                    <p className="ml-[5vw]">{lang('rule.play.game.desc_8')}</p>
                     <p className="ml-[4vw] font-bold text-[#C4C4C4] text-[35px]">{lang('rule.play.game.desc_9')}</p>
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_10')}</p>
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_11')}</p>
@@ -108,7 +108,6 @@ export default function RuleContent(){
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_17')}</p>
                     <p className="ml-[5vw] text-[#C4C4C4]">{lang('rule.play.game.desc_18')}</p>
                     <p className="ml-[5vw]">{lang('rule.play.game.desc_19')}</p>
-                    <p className="ml-[5vw]">{lang('rule.play.game.desc_20')}</p>
                 </div>
             </div>
           </div>
@@ -166,7 +165,6 @@ export default function RuleContent(){
                     <p className="">{lang('rule.terrain.canyon.desc_2')}</p>
                     <p className="">{lang('rule.terrain.canyon.desc_3')}</p>
                     <p className="">{lang('rule.terrain.canyon.desc_4')}</p>
-                    <p className="">{lang('rule.terrain.canyon.desc_5')}</p>
                 </div>
                 <p className="text-[#C4C4C4]">{lang('rule.terrain.water.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
@@ -235,7 +233,7 @@ export default function RuleContent(){
             <div className="h-10 w-[2px] bg-gray-300" />
             <button onClick={()=>scrollToWithOffset("play")} className=" text-white text-[25px]">{lang('rule.play.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("damage_resolution")} className=" text-white text-[20px]">{lang('rule.damage_resolution.title')}</button>
+            <button onClick={()=>scrollToWithOffset("damage_resolution")} className=" text-white text-[25px]">{lang('rule.damage_resolution.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
             <button onClick={()=>scrollToWithOffset("terrain")} className=" text-white text-[25px]">{lang('rule.terrain.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />

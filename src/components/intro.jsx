@@ -64,11 +64,11 @@ function Intro() {
 
                 <img src={next_faction.img} className="w-[150px] opacity-70 cursor-pointer" onClick={() => next()} />
               </div>
-              <div className="grid grid-cols-[10vw_40vw_10vw] justify-items-center mt-5">
+              <div className="grid grid-cols-[10vw_40vw_10vw] w-fit justify-items-center mt-5 gap-10">
                 <button className='left_arrow'><img src="/images/arrow.png" onClick={() => prev()} className="transform scale-x-[-1]"/></button>
-                <div className=" bg-black border-r-6 border-l-6 pl-5 pr-5 border-[#666666] w-full text-center">
-                  <p className="text-[#B5D7D7] text-[60px]">{lang(faction.name)}</p>
-                </div>
+                <Link to={`/factions/${faction.id}`} className=" bg-black border-r-6 border-l-6 pl-5 pr-5 border-[#666666] min-w-full max-w-fit text-center">
+                  <p className="text-[#B5D7D7] text-[24px] md:text-[60px]">{lang(faction.name)}</p>
+                </Link>
                 <button className="right_arrow"><img src="/images/arrow.png" onClick={() => next()} className="transform scale-x-[1]"/></button>
               </div>
             </div>
