@@ -50,7 +50,7 @@ function Filter(){
                         alt={faction.name}
                         className="w-full h-auto max-h-40 object-contain mb-4 rounded-md"
                         />
-                        <h2 className="text-white md:text-2xl text-[12px] text-center whitespace-nowrap">
+                        <h2 className="text-white md:text-[20px] text-[12px] text-center whitespace-nowrap">
                         {lang(faction.name)}
                         </h2>
                     </Link>
