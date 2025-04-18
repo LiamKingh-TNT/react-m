@@ -104,13 +104,13 @@ export function FactionIntroContent(faction) {
               <InfoBoard faction={faction.faction} type="soldier"/>
               <InfoBoard faction={faction.faction} type="card"/>
               <div className="hidden md:flex flex-col fixed left-0 top-1/2 mt-15 ml-10 -translate-y-1/2 items-center justify-center w-[10vw]">
-                <button onClick={()=>scrollToWithOffset("traits")} className=" text-white text-[25px]">{lang('fi.traits')}</button>
+                <button onClick={()=>scrollToWithOffset("traits")} className=" text-white text-[25px] hover:font-bold">{lang('fi.traits')}</button>
                 <div className="h-10 w-[2px] bg-gray-300" />
-                <button onClick={()=>scrollToWithOffset("lords")} className=" text-white text-[25px]">{lang('fi.lords')}</button>
+                <button onClick={()=>scrollToWithOffset("lords")} className=" text-white text-[25px] hover:font-bold">{lang('fi.lords')}</button>
                 <div className="h-10 w-[2px] bg-gray-300" />
-                <button onClick={()=>scrollToWithOffset("soldiers")} className=" text-white text-[25px]">{lang('fi.soldiers')}</button>
+                <button onClick={()=>scrollToWithOffset("soldiers")} className=" text-white text-[25px] hover:font-bold">{lang('fi.soldiers')}</button>
                 <div className="h-10 w-[2px] bg-gray-300" />
-                <button onClick={()=>scrollToWithOffset("cards")} className=" text-white text-[25px]">{lang('fi.cards')}</button>
+                <button onClick={()=>scrollToWithOffset("cards")} className=" text-white text-[25px] hover:font-bold">{lang('fi.cards')}</button>
               </div>
 
             </div>
