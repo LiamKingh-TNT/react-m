@@ -122,7 +122,7 @@
                 "desc_2":"每次攻擊都需要檢定"
             },
             "burn":{
-                "name":"Burn",
+                "name":"灼燒",
                 "desc_1":"Deals 2 true damage at the start of each action.",
                 "desc_2":"Reduces Burn stacks by 1 per activation.",
                 "desc_3":"Units affected by Burn suffer -2 Defense."
