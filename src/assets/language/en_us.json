@@ -64,8 +64,95 @@
                 "desc_16":"Move:",
                 "desc_17":"A unit may move once per turn. It moves 1 tile per point of Speed.",
                 "desc_18":"Dash:",
-                "desc_19":"Move distance becomes Speed + 1D3.",
-                "desc_20":"Dash causes the unit to become Exhausted."
+                "desc_19":"Move distance becomes Speed + 1D3."
+            }
+        },
+        "damage_resolution":{
+            "title":"Damage Resolution",
+            "hit_check":{
+                "name":"Hit Check",
+                "desc_1":"If the attack does not have \"Guaranteed Hit\", roll 1d6 to determine whether it hits.",
+                "desc_2":"(Target's Speed [max 6] + Target's Damage Resistance + 3 - Accuracy) ≤ Dice Roll"
+            },
+            "damege_calculation":{
+                "name":"Damage Calculation",
+                "desc_1":"If the attack hits, calculate damage as follows:",
+                "desc_2":"Actual Damage = Damage − (Defense − Pierce) [If result < 0, treat as 0]",
+                "desc_3":"Remaining HP = HP − Actual Damage",
+                "desc_4":"If the unit's HP is reduced to 0 or below, it is defeated and must be removed from the battlefield."
+            }
+        },
+        "terrain":{
+            "title":"Terrain",
+            "general":{
+                "name":"General",
+                "desc_1":"Terrain may be placed on any empty tile.",
+                "desc_2":"In Capture Point Mode, terrain cannot be placed within 1 tile of a capture point"
+            },
+            "mountains":{
+                "name":"Mountains",
+                "desc_1":"Can be placed on Water or Canyon tiles.",
+                "desc_2":"When placed, both the Mountain and the underlying tile are removed, converting the tile into normal ground.",
+                "desc_3":"If placed adjacent to a Water tile, it is converted into Water.",
+                "desc_4":"Blocks line-of-sight and direct-targeting skills."
+            },
+            "canyon":{
+                "name":"Canyon",
+                "desc_1":"Can be placed on Mountain tiles.",
+                "desc_2":"When placed, both the Canyon and the underlying tile are removed, converting the tile into normal ground.",
+                "desc_3":"Impassable for all units.",
+                "desc_4":"Small units may hide in Canyons.",
+                "desc_5":"If the Canyon is destroyed, hidden units inside take 1d6 true unavoidable damage."
+            },
+            "water":{
+                "name":"Water",
+                "desc_1":"When a unit steps onto Water, it is immediately displaced to a random empty tile adjacent to the Water’s endpoint.",
+                "desc_2":"If placed adjacent to a Canyon, the Canyon is converted into Water."
+            }
+        },
+        "effects":{
+            "title":"Effects",
+            "rush":{
+                "name":"Rush",
+                "desc_1":"The target is pushed 1 tile away from the attacker's range.",
+                "desc_2":"If unable to move, the target takes double damage, and the attacker stops immediately."
+            },
+            "multi_strike":{
+                "name":"Multi-Strike",
+                "desc_1":"Perform multiple attacks.",
+                "desc_2":"Each attack requires a separate hit check."
+            },
+            "burn":{
+                "name":"Burn",
+                "desc_1":"Deals 2 true damage at the start of each action.",
+                "desc_2":"Reduces Burn stacks by 1 per activation.",
+                "desc_3":"Units affected by Burn suffer -2 Defense."
+            },
+            "teleport":{
+                "name":"Teleport",
+                "desc_1":"The target location must be at least 3 tiles away from all enemy units."
+            },
+            "stun":{
+                "name":"Stun",
+                "desc_1":"A stunned unit cannot act, and all attacks automatically hit.",
+                "desc_2":"At the end of its turn, it may roll 1d6 against Difficulty X to recover.",
+                "desc_3":"X = remaining stun stacks.",
+                "desc_4":"Stun stacks decrease by 1 at the end of each turn."
+            },
+            "exhausted":{
+                "name":"Exhausted",
+                "desc_1":"This action cannot be used if any other action has been taken this turn.",
+                "desc_2":"After using an Exhausted action, no further actions may be taken this turn."
+            },
+            "armor_break":{
+                "name":"Armor Break",
+                "desc_1":"Each stack of Armor Break reduces Defense by 1."
+            },
+            "poison":{
+                "name":"Poison",
+                "desc_1":"Deals 1 true damage at the start of each action.",
+                "desc_2":"Reduces Poison stacks by 1 per activation.",
+                "desc_3":"Units affected by Poison suffer -3 Damage and -1 Speed."
             }
         }
     },

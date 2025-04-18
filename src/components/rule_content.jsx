@@ -112,15 +112,134 @@ export default function RuleContent(){
                 </div>
             </div>
           </div>
+          <div id="damage_resolution" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
+            <TitleText
+                text={lang('rule.damage_resolution.title')}
+                fontSize={60}
+                strokeWidth={10}
+                fill="#3E2F2F"
+                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+                width={1600}
+                height={1200}
+            />
+            <div className=" w-full h-fit relative z-40">
+                <p className="text-[#C4C4C4]">{lang('rule.damage_resolution.hit_check.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.damage_resolution.hit_check.desc_1')}</p>
+                    <p className="">{lang('rule.damage_resolution.hit_check.desc_2')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.damage_resolution.damege_calculation.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.damage_resolution.damege_calculation.desc_1')}</p>
+                    <p className="">{lang('rule.damage_resolution.damege_calculation.desc_2')}</p>
+                    <p className="">{lang('rule.damage_resolution.damege_calculation.desc_3')}</p>
+                    <p className="">{lang('rule.damage_resolution.damege_calculation.desc_4')}</p>
+                </div>
+            </div>
+          </div>
+          <div id="terrain" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
+            <TitleText
+                text={lang('rule.terrain.title')}
+                fontSize={60}
+                strokeWidth={10}
+                fill="#3E2F2F"
+                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+                width={1600}
+                height={1200}
+            />
+            <div className=" w-full h-fit relative z-40">
+                <p className="text-[#C4C4C4]">{lang('rule.terrain.general.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.terrain.general.desc_1')}</p>
+                    <p className="">{lang('rule.terrain.general.desc_2')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.terrain.mountains.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.terrain.mountains.desc_1')}</p>
+                    <p className="">{lang('rule.terrain.mountains.desc_2')}</p>
+                    <p className="">{lang('rule.terrain.mountains.desc_3')}</p>
+                    <p className="">{lang('rule.terrain.mountains.desc_4')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.terrain.canyon.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.terrain.canyon.desc_1')}</p>
+                    <p className="">{lang('rule.terrain.canyon.desc_2')}</p>
+                    <p className="">{lang('rule.terrain.canyon.desc_3')}</p>
+                    <p className="">{lang('rule.terrain.canyon.desc_4')}</p>
+                    <p className="">{lang('rule.terrain.canyon.desc_5')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.terrain.water.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.terrain.water.desc_1')}</p>
+                    <p className="">{lang('rule.terrain.water.desc_2')}</p>
+                </div>
+            </div>
+          </div>
+          <div id="effects" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
+            <TitleText
+                text={lang('rule.effects.title')}
+                fontSize={60}
+                strokeWidth={10}
+                fill="#3E2F2F"
+                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
+                width={1600}
+                height={1200}
+            />
+            <div className=" w-full h-fit relative z-40">
+                <p className="text-[#C4C4C4]">{lang('rule.effects.rush.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.rush.desc_1')}</p>
+                    <p className="">{lang('rule.effects.rush.desc_2')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.effects.burn.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.burn.desc_1')}</p>
+                    <p className="">{lang('rule.effects.burn.desc_2')}</p>
+                    <p className="">{lang('rule.effects.burn.desc_3')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.effects.multi_strike.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.multi_strike.desc_1')}</p>
+                    <p className="">{lang('rule.effects.multi_strike.desc_2')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.effects.teleport.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.teleport.desc_1')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.effects.armor_break.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.armor_break.desc_1')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.effects.stun.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.stun.desc_1')}</p>
+                    <p className="">{lang('rule.effects.stun.desc_2')}</p>
+                    <p className="">{lang('rule.effects.stun.desc_3')}</p>
+                    <p className="">{lang('rule.effects.stun.desc_4')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.effects.exhausted.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.exhausted.desc_1')}</p>
+                    <p className="">{lang('rule.effects.exhausted.desc_2')}</p>
+                </div>
+                <p className="text-[#C4C4C4]">{lang('rule.effects.poison.name')}</p>
+                <div className="ml-[5vw] flex flex-col gap-5">
+                    <p className="">{lang('rule.effects.poison.desc_1')}</p>
+                    <p className="">{lang('rule.effects.poison.desc_2')}</p>
+                </div>
+            </div>
+          </div>
           <p className="mt-[40vh]"/>
           <div className="hidden md:flex flex-col fixed left-0 top-1/2 mt-15 ml-10 -translate-y-1/2 items-center justify-center w-[10vw]">
             <button onClick={()=>scrollToWithOffset("target")} className=" text-white text-[25px]">{lang('rule.target.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
             <button onClick={()=>scrollToWithOffset("play")} className=" text-white text-[25px]">{lang('rule.play.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("soldiers")} className=" text-white text-[25px]">{lang('fi.soldiers')}</button>
+            <button onClick={()=>scrollToWithOffset("damage_resolution")} className=" text-white text-[20px]">{lang('rule.damage_resolution.title')}</button>
             <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("cards")} className=" text-white text-[25px]">{lang('fi.cards')}</button>
+            <button onClick={()=>scrollToWithOffset("terrain")} className=" text-white text-[25px]">{lang('rule.terrain.title')}</button>
+            <div className="h-10 w-[2px] bg-gray-300" />
+            <button onClick={()=>scrollToWithOffset("effects")} className=" text-white text-[25px]">{lang('rule.effects.title')}</button>
             </div>
         </div>
     )
