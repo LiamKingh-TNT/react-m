@@ -123,17 +123,17 @@
             },
             "burn":{
                 "name":"灼燒",
-                "desc_1":"Deals 2 true damage at the start of each action.",
-                "desc_2":"Reduces Burn stacks by 1 per activation.",
-                "desc_3":"Units affected by Burn suffer -2 Defense."
+                "desc_1":"每次該單位行動固定2點真實傷害",
+                "desc_2":"每次該單位行動後減少一層灼燒",
+                "desc_3":"具有該效果的單位防禦-2"
             },
             "teleport":{
-                "name":"Teleport",
-                "desc_1":"The target location must be at least 3 tiles away from all enemy units."
+                "name":"傳送",
+                "desc_1":"目標地至少與敵方單位保持3格距離"
             },
             "stun":{
-                "name":"Stun",
-                "desc_1":"A stunned unit cannot act, and all attacks automatically hit.",
+                "name":"暈眩",
+                "desc_1":"單位無法行動，且受到的任何攻擊皆視為必中",
                 "desc_2":"At the end of its turn, it may roll 1d6 against Difficulty X to recover.",
                 "desc_3":"X = remaining stun stacks.",
                 "desc_4":"Stun stacks decrease by 1 at the end of each turn."
