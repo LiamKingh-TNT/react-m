@@ -1,4 +1,9 @@
 {
+    "nullSkill":"空技能",
+    "nullSkillDesc":"空",
+    "defaultLord":"預設領主",
+    "defaultCard":"預設世界卡",
+    "defaultSoldier":"預設兵棋",
     "title": "虛妄王座",
     "menu": {
       "background": "故事背景",

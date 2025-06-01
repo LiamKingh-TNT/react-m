@@ -1,6 +1,7 @@
 import BackgroundBlur from "./background_blur"
 import { useTranslation } from 'react-i18next'
 import TitleText from './title_text'
+import { ChunkList } from './chunck_list';
 export default function RuleContent(){
     const { t:lang } = useTranslation();
     const scrollToWithOffset = (id) => {
@@ -229,17 +230,7 @@ export default function RuleContent(){
             </div>
           </div>
           <p className="mt-[40vh]"/>
-          <div className="hidden md:flex flex-col fixed left-0 top-1/2 mt-15 ml-10 -translate-y-1/2 items-center justify-center w-[10vw]">
-            <button onClick={()=>scrollToWithOffset("target")} className=" text-white text-[25px] hover:font-bold">{lang('rule.target.title')}</button>
-            <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("play")} className=" text-white text-[25px] hover:font-bold">{lang('rule.play.title')}</button>
-            <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("damage_resolution")} className=" text-white text-[25px] hover:font-bold">{lang('rule.damage_resolution.title')}</button>
-            <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("terrain")} className=" text-white text-[25px] hover:font-bold">{lang('rule.terrain.title')}</button>
-            <div className="h-10 w-[2px] bg-gray-300" />
-            <button onClick={()=>scrollToWithOffset("effects")} className=" text-white text-[25px] hover:font-bold">{lang('rule.effects.title')}</button>
-            </div>
+          <ChunkList chunks={["target","play","damage_resolution","terrain","effects"] } type={"rule"}/>
         </div>
     )
 }

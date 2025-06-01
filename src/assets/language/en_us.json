@@ -1,4 +1,9 @@
 {
+    "nullSkill":"Null Skill",
+    "nullSkillDesc":"Null.",
+    "defaultLord":"Default Lord",
+    "defaultCard":"Default Card",
+    "defaultSoldier":"Default Soldier",
     "title": "The Throne of Delusion",
     "menu": {
       "background": "Background Story",
@@ -199,6 +204,16 @@
             "lords": {
                 "lord_1":{
                     "name":"The Emperor",
+                    "skills":{
+                        "skill_1":{
+                            "name":"Diligent Governance",
+                            "desc":"You may declare the outcome of a single check."
+                        }
+                    },
+                    "story":"NULL"
+                },
+                "lord_2":{
+                    "name":"The Twin Earth God",
                     "skills":{
                         "skill_1":{
                             "name":"Diligent Governance",
