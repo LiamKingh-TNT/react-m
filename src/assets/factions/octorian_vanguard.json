@@ -12,7 +12,7 @@
     ],
     "soldiers": [
         {
-            "name":"",
+            "name":"factions.octorian_vanguard.soldiers.soldier_1.name",
             "def":3,
             "hp":5,
             "dex":2,
@@ -36,7 +36,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.octorian_vanguard.soldiers.soldier_2.name",
             "def":1,
             "hp":2,
             "dex":1,
@@ -60,7 +60,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.octorian_vanguard.soldiers.soldier_3.name",
             "def":2,
             "hp":6,
             "dex":1,
@@ -84,7 +84,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.octorian_vanguard.soldiers.soldier_4.name",
             "def":3,
             "hp":8,
             "dex":3,
@@ -113,7 +113,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.octorian_vanguard.soldiers.soldier_5.name",
             "def":4,
             "hp":8,
             "dex":2,
@@ -168,11 +168,11 @@
                 }
             ],
             "story":"factions.octorian_vanguard.lords.lord_1.story",
-            "img":"/images/the_emperor.png",
+            "img":"/images/daniel.png",
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"factions.octorian_vanguard.lords.lord_1.name",
+            "name":"factions.octorian_vanguard.lords.lord_2.name",
             "def":2,
             "hp":10,
             "dex":0,

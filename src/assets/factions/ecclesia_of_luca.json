@@ -16,7 +16,7 @@
     ],
     "soldiers": [
         {
-            "name":"",
+            "name":"factions.ecclesia_of_luca.soldiers.soldier_1.name",
             "def":3,
             "hp":8,
             "dex":1,
@@ -40,7 +40,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.ecclesia_of_luca.soldiers.soldier_2.name",
             "def":1,
             "hp":6,
             "dex":2,
@@ -69,7 +69,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.ecclesia_of_luca.soldiers.soldier_3.name",
             "def":3,
             "hp":5,
             "dex":2,
@@ -98,7 +98,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.ecclesia_of_luca.soldiers.soldier_4.name",
             "def":4,
             "hp":12,
             "dex":3,
@@ -132,7 +132,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.ecclesia_of_luca.soldiers.soldier_5.name",
             "def":4,
             "hp":24,
             "dex":1,
@@ -206,7 +206,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"factions.ecclesia_of_luca.lords.lord_1.name",
+            "name":"factions.ecclesia_of_luca.lords.lord_2.name",
             "def":2,
             "hp":16,
             "dex":3,
@@ -214,23 +214,23 @@
             "type":"fi.life",
             "skills":[
                 {
-                    "name":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.desc",
+                    "name":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_1.name",
+                    "desc":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_1.desc",
                     "cost":2
                 },
                 {
-                    "name":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.desc",
+                    "name":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_2.name",
+                    "desc":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_2.desc",
                     "cost":3
                 },
                 {
-                    "name":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.desc",
+                    "name":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_3.name",
+                    "desc":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_3.desc",
                     "cost":6
                 },
                 {
-                    "name":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.lords.lord_1.skills.skill_1.desc",
+                    "name":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_4.name",
+                    "desc":"factions.ecclesia_of_luca.lords.lord_2.skills.skill_4.desc",
                     "cost":5
                 }
             ],

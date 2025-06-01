@@ -20,7 +20,7 @@
     ],
     "soldiers": [
         {
-            "name":"",
+            "name":"factions.crimson_sunchasers.soldiers.soldier_1.name",
             "def":0,
             "hp":6,
             "dex":4,
@@ -44,7 +44,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.crimson_sunchasers.soldiers.soldier_2.name",
             "def":0,
             "hp":20,
             "dex":2,
@@ -73,7 +73,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.crimson_sunchasers.soldiers.soldier_3.name",
             "def":2,
             "hp":15,
             "dex":1,
@@ -112,7 +112,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.crimson_sunchasers.soldiers.soldier_4.name",
             "def":1,
             "hp":18,
             "dex":2,
@@ -151,7 +151,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"",
+            "name":"factions.crimson_sunchasers.soldiers.soldier_5.name",
             "def":2,
             "hp":20,
             "dex":2,
@@ -230,7 +230,7 @@
             "head_img":"/images/the_emperor_head.png"
         },
         {
-            "name":"factions.crimson_sunchasers.lords.lord_1.name",
+            "name":"factions.crimson_sunchasers.lords.lord_2.name",
             "def":2,
             "hp":22,
             "dex":3,
