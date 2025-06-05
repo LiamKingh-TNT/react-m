@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
+export function ChunkList({ chunks, type, auto_wheel = false, upoffset = -100 }) {
   const { t: lang } = useTranslation();
 
   const [activeChunk, setActiveChunk] = useState(null);
@@ -22,6 +22,14 @@ export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
 
   // 节流标记，避免一次滚轮手势触发多次切换
   const isThrottled = useRef(false);
+
+  // ----------------------
+  // 0. 计算当前 activeChunk 的索引
+  // ----------------------
+  // 如果 activeChunk 还没设置，findIndex 会返回 -1
+  const activeChunkIndex = activeChunk != null
+    ? chunks.findIndex((id) => id === activeChunk)
+    : -1;
 
   const updateActiveByScroll = () => {
     if (!chunks || chunks.length === 0) return;
@@ -73,33 +81,26 @@ export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
   // 侦听“滚轮事件”，向上滚调到上一个 chunk，向下滚调到下一个 chunk
   useEffect(() => {
     const handleWheel = (e) => {
-        
       if (isThrottled.current) return;
 
       const currentIndex = chunks.findIndex((id) => id === activeChunk);
       if (e.deltaY > 0 && currentIndex < chunks.length - 1) {
-        if(!auto_wheel) return;
+        if (!auto_wheel) return;
         // 向下滚：调到下一个
         const nextId = chunks[currentIndex + 1];
-        if(currentIndex === chunks.length - 2)
-        {
-            scrollToWithOffset(nextId,0);
-        }
-        else
-        {
-            scrollToWithOffset(nextId);
+        if (currentIndex === chunks.length - 2) {
+          scrollToWithOffset(nextId, 0);
+        } else {
+          scrollToWithOffset(nextId);
         }
       } else if (e.deltaY < 0 && currentIndex > 0) {
-        if(!auto_wheel) return;
+        if (!auto_wheel) return;
         // 向上滚：调到上一个
         const prevId = chunks[currentIndex - 1];
-        if(chunks[currentIndex] === "trait")
-        {
-            scrollToWithOffset(prevId,-200);
-        }
-        else
-        {
-            scrollToWithOffset(prevId,-100);
+        if (chunks[currentIndex] === "trait") {
+          scrollToWithOffset(prevId, -200);
+        } else {
+          scrollToWithOffset(prevId, -100);
         }
       }
 
@@ -112,8 +113,8 @@ export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
 
     window.addEventListener("wheel", handleWheel, { passive: true });
     return () => window.removeEventListener("wheel", handleWheel);
-  }, [activeChunk, chunks]);
-  
+  }, [activeChunk, chunks, auto_wheel]);
+
   // 计算括号位置的 useLayoutEffect，依赖 activeChunk & menuVisible
   useLayoutEffect(() => {
     if (!activeChunk || !menuVisible) return;
@@ -144,7 +145,7 @@ export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
     setBracketReady(true);
   }, [activeChunk, menuVisible]);
 
-  const scrollToWithOffset = (id, offset=-50) => {
+  const scrollToWithOffset = (id, offset = -50) => {
     const element = document.getElementById(id);
     if (element) {
       const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
@@ -212,7 +213,8 @@ export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
 
   return (
     <AnimatePresence>
-      {menuVisible && (
+      {/* 只有当 menuVisible 为 true 且 活动块索引 > 0 时，才渲染菜单 */}
+      {menuVisible && activeChunkIndex > 0 && (
         <motion.div
           ref={containerRef}
           initial={{ opacity: 0 }}
@@ -251,13 +253,9 @@ export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
           )}
           {chunks.map((chunk, idx) => {
             const isActive = chunk === activeChunk;
-            if(idx===0)
-            {
-                return(null)
-            }
-            else if(idx===chunks.length-1)
-            {
-                return(null)
+            // 依然跳过 idx===0 与 idx===chunks.length-1，不渲染首尾按钮
+            if (idx === 0 || idx === chunks.length - 1) {
+              return null;
             }
             return (
               <div
@@ -268,12 +266,12 @@ export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
               >
                 <button
                   ref={(el) => (buttonRefs.current[chunk] = el)}
-                  onClick={() => scrollToWithOffset(chunk,-100)}
+                  onClick={() => scrollToWithOffset(chunk, -100)}
                   className={`relative inline-block text-white text-[25px] ${
                     isActive ? "font-bold" : "font-normal"
                   } py-1 focus:outline-none`}
                 >
-                  {type == "rule"
+                  {type === "rule"
                     ? lang(`rule.${chunk}.title`)
                     : lang(`fi.${chunk}`)}
                 </button>
