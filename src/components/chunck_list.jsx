@@ -20,6 +20,9 @@ export function ChunkList({ chunks, type }) {
   const visibleSet = useRef(new Set());
   const [menuVisible, setMenuVisible] = useState(false);
 
+  // 节流标记，避免一次滚轮手势触发多次切换
+  const isThrottled = useRef(false);
+
   const updateActiveByScroll = () => {
     if (!chunks || chunks.length === 0) return;
     const middleY = window.innerHeight / 2;
@@ -67,7 +70,41 @@ export function ChunkList({ chunks, type }) {
     return () => observer.disconnect();
   }, [chunks]);
 
-  // === 重点改动：把 menuVisible 也放到依赖里 ===
+  // 侦听“滚轮事件”，向上滚调到上一个 chunk，向下滚调到下一个 chunk
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (isThrottled.current) return;
+
+      const currentIndex = chunks.findIndex((id) => id === activeChunk);
+      if (e.deltaY > 0 && currentIndex < chunks.length - 1) {
+        // 向下滚：调到下一个
+        const nextId = chunks[currentIndex + 1];
+        if(currentIndex === chunks.length - 2)
+        {
+            scrollToWithOffset(nextId,0);
+        }
+        else
+        {
+            scrollToWithOffset(nextId);
+        }
+      } else if (e.deltaY < 0 && currentIndex > 0) {
+        // 向上滚：调到上一个
+        const prevId = chunks[currentIndex - 1];
+        scrollToWithOffset(prevId,-100);
+      }
+
+      // 节流 300ms
+      isThrottled.current = true;
+      setTimeout(() => {
+        isThrottled.current = false;
+      }, 300);
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: true });
+    return () => window.removeEventListener("wheel", handleWheel);
+  }, [activeChunk, chunks]);
+
+  // 计算括号位置的 useLayoutEffect，依赖 activeChunk & menuVisible
   useLayoutEffect(() => {
     if (!activeChunk || !menuVisible) return;
     const btnEl = buttonRefs.current[activeChunk];
@@ -78,7 +115,8 @@ export function ChunkList({ chunks, type }) {
     const containerRect = containerEl.getBoundingClientRect();
     const btnRect = btnEl.getBoundingClientRect();
 
-    const bracketTop = btnRect.top - containerRect.top + (btnRect.height - bracketHeight) / 2;
+    const bracketTop =
+      btnRect.top - containerRect.top + (btnRect.height - bracketHeight) / 2;
     const bracketOffsetX = 8;
     const bracketGap = 10;
 
@@ -96,25 +134,27 @@ export function ChunkList({ chunks, type }) {
     setBracketReady(true);
   }, [activeChunk, menuVisible]);
 
-  const scrollToWithOffset = (id) => {
+  const scrollToWithOffset = (id, offset=-50) => {
     const element = document.getElementById(id);
-    const offset = -100;
     if (element) {
       const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
+  // 侦听滚动，更新 activeChunk
   useEffect(() => {
     const handleScroll = () => updateActiveByScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [chunks]);
 
+  // 初始化定位一次
   useEffect(() => {
     updateActiveByScroll();
   }, []);
 
+  // 侦测菜单可见性
   useEffect(() => {
     if (!chunks || chunks.length === 0) return;
 
@@ -135,7 +175,6 @@ export function ChunkList({ chunks, type }) {
       });
 
       const anyVisible = visibleSet.current.size > 0;
-      // **当菜单可见度发生变化时，顺便触发一次用来计算 activeChunk 的滚动判断**
       if (anyVisible && !hasInitialized) {
         setActiveChunk(chunks[0]);
         setHasInitialized(true);
@@ -154,6 +193,7 @@ export function ChunkList({ chunks, type }) {
     };
   }, [chunks, hasInitialized]);
 
+  // 菜单一旦可见，就再定位一次
   useEffect(() => {
     if (menuVisible) {
       updateActiveByScroll();
@@ -201,6 +241,14 @@ export function ChunkList({ chunks, type }) {
           )}
           {chunks.map((chunk, idx) => {
             const isActive = chunk === activeChunk;
+            if(idx===0)
+            {
+                return(null)
+            }
+            else if(idx===chunks.length-1)
+            {
+                return(null)
+            }
             return (
               <div
                 key={`${chunk}-${idx}`}
@@ -219,7 +267,7 @@ export function ChunkList({ chunks, type }) {
                     ? lang(`rule.${chunk}.title`)
                     : lang(`fi.${chunk}`)}
                 </button>
-                {idx < chunks.length - 1 && (
+                {idx < chunks.length - 2 && (
                   <div className="h-10 w-[2px] bg-gray-300" />
                 )}
               </div>

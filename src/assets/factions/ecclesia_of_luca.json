@@ -4,6 +4,7 @@
     "background_img": "/images/ecclesia_of_luca_background.png",
     "name": "factions.ecclesia_of_luca.name",
     "groupe":"selenyx",
+    "color":"d19f14",
     "traits": [
         {
             "name":"factions.ecclesia_of_luca.traits.trait_1.name",
@@ -247,32 +248,32 @@
             "cost":3
         },
         {
-            "name":"factions.ecclesia_of_luca.cards.card_1.name",
-            "desc":"factions.ecclesia_of_luca.cards.card_1.desc",
+            "name":"factions.ecclesia_of_luca.cards.card_2.name",
+            "desc":"factions.ecclesia_of_luca.cards.card_2.desc",
             "img":"",
             "cost":0
         },
         {
-            "name":"factions.ecclesia_of_luca.cards.card_1.name",
-            "desc":"factions.ecclesia_of_luca.cards.card_1.desc",
+            "name":"factions.ecclesia_of_luca.cards.card_3.name",
+            "desc":"factions.ecclesia_of_luca.cards.card_3.desc",
             "img":"",
             "cost":3
         },
         {
-            "name":"factions.ecclesia_of_luca.cards.card_1.name",
-            "desc":"factions.ecclesia_of_luca.cards.card_1.desc",
+            "name":"factions.ecclesia_of_luca.cards.card_4.name",
+            "desc":"factions.ecclesia_of_luca.cards.card_4.desc",
             "img":"",
             "cost":1
         },
         {
-            "name":"factions.ecclesia_of_luca.cards.card_1.name",
-            "desc":"factions.ecclesia_of_luca.cards.card_1.desc",
+            "name":"factions.ecclesia_of_luca.cards.card_5.name",
+            "desc":"factions.ecclesia_of_luca.cards.card_5.desc",
             "img":"",
             "cost":5
         },
         {
-            "name":"factions.ecclesia_of_luca.cards.card_1.name",
-            "desc":"factions.ecclesia_of_luca.cards.card_1.desc",
+            "name":"factions.ecclesia_of_luca.cards.card_6.name",
+            "desc":"factions.ecclesia_of_luca.cards.card_6.desc",
             "img":"",
             "cost":4
         }

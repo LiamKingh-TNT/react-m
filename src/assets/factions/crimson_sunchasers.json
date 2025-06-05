@@ -4,6 +4,7 @@
     "background_img": "/images/crimson_sunchasers_background.png",
     "name": "factions.crimson_sunchasers.name",
     "groupe":"chaos",
+    "color":"d19f14",
     "traits": [
         {
             "name":"factions.crimson_sunchasers.traits.trait_1.name",

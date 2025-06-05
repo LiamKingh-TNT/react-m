@@ -15,7 +15,7 @@ export default function RuleContent(){
       };
     return(
         <div className="content relative z-20 ">
-          <div className="flex items-center justify-center h-[80vh]">
+          <div id="title" className="flex items-center justify-center h-[80vh]">
            <TitleText
                 text={lang('rule.title')}
                 fontSize={100}
@@ -46,6 +46,7 @@ export default function RuleContent(){
                 <p className="ml-[5vw]">{lang('rule.target.annihilation.desc')}</p>
             </div>
           </div>
+          <div className="h-150"/>
           <div id="play" className=" md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[4em] border-y-8 border-[#73979F]">
             <TitleText
                 text={lang('rule.play.title')}
@@ -230,7 +231,7 @@ export default function RuleContent(){
             </div>
           </div>
           <p className="mt-[40vh]"/>
-          <ChunkList chunks={["target","play","damage_resolution","terrain","effects"] } type={"rule"}/>
+          <ChunkList chunks={["title","target","play","damage_resolution","terrain","effects","bottom"] } type={"rule"}/>
         </div>
     )
 }

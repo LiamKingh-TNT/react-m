@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 function Footer() {
   const { t:lang } = useTranslation()
     return (
-        <footer className="footer relative z-50 w-full min-h-screen text-[#C4C4C4] flex flex-col items-center gap-15 md:justify-between">
+        <footer id='bottom' className="footer relative z-50 w-full min-h-screen text-[#C4C4C4] flex flex-col items-center gap-15 md:justify-between">
           <img src="/images/main_icon.png" className="w-[120px] h-auto md:w-[240px]"/>
           <p className="relative text-[6vw] font-jersey text-[#778F98] z-10 md:text-[4vw]">
               {lang('title')}

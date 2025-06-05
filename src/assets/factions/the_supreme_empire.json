@@ -4,6 +4,7 @@
     "background_img": "/images/the_supreme_empire_background.png",
     "name": "factions.the_supreme_empire.name",
     "groupe":"solaris",
+    "color":"b98d11",
     "traits": [
         {
             "name":"factions.the_supreme_empire.traits.trait_1.name",

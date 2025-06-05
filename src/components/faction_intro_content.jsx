@@ -12,6 +12,7 @@ export function FactionIntroContent(faction) {
     const [selected_trait, SetSelectedTrait] = useState(0);
     const btnRefs = useRef([]);
 
+    console.log(faction.color);
     const handleMouseEnter = (index) => {
       gsap.to(btnRefs.current[index], {
         height: '3vw',
@@ -32,16 +33,9 @@ export function FactionIntroContent(faction) {
     
     return(
         <div className="content relative z-20 overflow-x-hidden">
-          <div className="flex items-center justify-center  h-[80vh]">
-            <TitleText
-              text={lang(faction.faction.name)}
-              fontSize={100}
-              strokeWidth={40}
-              fill="#3E2F2F"
-              strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-              width={1600}
-              height={1200}
-            />
+          <div id="title" className="flex flex-col items-center justify-center  h-[80vh]">
+            <img src={faction.faction.img} alt="faction_icon" className="w-40 md:w-80 h-auto"/>
+            <p className={`text-[40px] md:text-[100px] text-[#${faction.faction.color}] font-extrabold`}>{lang(faction.faction.name)}</p>
           </div>
           <p className="mt-[10vh]"/>
           <BackgroundBlur/>
@@ -91,13 +85,15 @@ export function FactionIntroContent(faction) {
                   </div>
 
               </div>
+            <div className="h-40"/>
               
               <InfoBoard faction={faction.faction} type="lord"/>
               <InfoBoard faction={faction.faction} type="soldier"/>
               <InfoBoard faction={faction.faction} type="card"/>
-              <ChunkList chunks={["traits","lords","soldiers","cards"]} type={""}/>
+              <ChunkList chunks={["title","traits","lords","soldiers","cards","bottom"]} type={""}/>
 
             </div>
+            <div className="h-40"/>
         </div>
     )
 }

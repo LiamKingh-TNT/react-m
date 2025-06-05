@@ -9,7 +9,7 @@
       "background": "Background Story",
       "component": "Game Component",
       "rules": "Game Rules",
-      "language": "Language: English"
+      "language": "English"
     },
     "home":{
         "brief_story":"To claim the one and only supreme throne, countless rival factions wage war upon this land.",
@@ -264,24 +264,28 @@
                     "story":""
                 }
             ],
-            "lords": [
-                {
-                    "name":"",
-                    "def":0,
-                    "hp":0,
-                    "dex":0,
-                    "size":"",
-                    "type":"",
+            "lords": {
+                "lord_1":{
+                    "name":"Pope Laimen",
                     "skills":[
                         {
                             "name":"",
-                            "desc":"",
-                            "cost":""
+                            "desc":""
                         }
                     ],
-                    "story":""
+                    "story":"Null."
+                },
+                "lord_2":{
+                    "name":"Saint Luna",
+                    "skills":[
+                        {
+                            "name":"",
+                            "desc":""
+                        }
+                    ],
+                    "story":"Null."
                 }
-            ],
+            },
             "cards": [
         {
             "name":"",

@@ -4,6 +4,7 @@
     "background_img": "/images/dwarf_forge_background.png",
     "name": "factions.dwarf_forge.name",
     "groupe":"selenyx",
+    "color":"d19f14",
     "traits": [
         {
             "name":"factions.dwarf_forge.traits.trait_1.name",

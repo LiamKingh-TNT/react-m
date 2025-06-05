@@ -4,6 +4,7 @@
     "background_img": "/images/alliance_of_ascendants_background.png",
     "name": "factions.alliance_of_ascendants.name",
     "groupe":"chaos",
+    "color":"d19f14",
     "traits": [
         {
             "name":"factions.alliance_of_ascendants.traits.trait_1.name",
