@@ -31,6 +31,8 @@ export function InfoBoard({ faction, type = "lord" }) {
       ? faction.lords
       : type === 'soldier'
       ? faction.soldiers
+      : type === 'trait'
+      ? faction.traits
       : faction.cards;
 
   return (
@@ -183,7 +185,7 @@ export function InfoBoard({ faction, type = "lord" }) {
                 setOpenSkillKey(null);
               }}
               className={`
-                w-[6em] h-[6em]
+                w-[6em] h-[6em] z-20
                 hover:border-[#7FA4AA]
                 border-4 border-[${selected === index ? "#7FA4AA" : "#44646B"}]
               `}

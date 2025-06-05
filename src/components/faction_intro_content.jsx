@@ -15,8 +15,8 @@ export function FactionIntroContent(faction) {
     console.log(faction.color);
     const handleMouseEnter = (index) => {
       gsap.to(btnRefs.current[index], {
-        height: '3vw',
-        y:'-1vw',
+        height: '55px',
+        y:'-25px',
         duration: 0.3,
         ease: 'power2.out',
       });
@@ -24,13 +24,12 @@ export function FactionIntroContent(faction) {
 
     const handleMouseLeave = (index) => {
       gsap.to(btnRefs.current[index], {
-        height: '2vw',
-        y:'0',
+        height: '40px',
+        y:'-10px',
         duration: 0.3,
         ease: 'power2.out',
       });
     };
-    
     return(
         <div className="content relative z-20 overflow-x-hidden">
           <div id="title" className="flex flex-col items-center justify-center  h-[80vh]">
@@ -44,7 +43,8 @@ export function FactionIntroContent(faction) {
                 <div className="flex items-center justify-center">
                   <p className="text-[60px] text-[#A0C5CC] font-extrabold">{lang('fi.traits')}</p>
                 </div>
-                <div className="h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-8 grid-rows-10 px-1 py-1">
+                <div className=" h-[40vh] w-[73vw] mx-auto md:ml-[20vw] grid grid-cols-1 grid-rows-10 px-1 py-1">
+                  <div className='w-full flex flex-row'>
                     {faction.faction.traits.map((trait, index) => {
                       const isActive = selected_trait === index;
                       const bg = isActive ? "bg-[#73979F]" : "bg-[#44646B]";
@@ -58,8 +58,7 @@ export function FactionIntroContent(faction) {
                           onClick={() => SetSelectedTrait(index)}
                           // 这里使用 row-start-1 + 动态 col-start 放到第 1 行第 (index+1) 列
                           className={`
-                            row-start-1 
-                            col-start-${index + 1} 
+                            h-[40px]
                             whitespace-nowrap            /* 禁止换行，保证文字都是横向 */
                             rounded-tl-2xl rounded-tr-2xl 
                             text-[20px]                  /* 根据文字长度适当调小字号 */
@@ -73,8 +72,9 @@ export function FactionIntroContent(faction) {
                         </button>
                       );
                     })}
+                  </div>
 
-                    <div className="bg-[#815A5A]/50 border-8 border-[#73979F] row-start-2 col-span-8 p-4 h-fit min-h-[50vh] z-20">
+                    <div className="bg-[#815A5A]/50 border-8 border-[#73979F] row-start-2 col-span-9 p-4 h-fit min-h-[50vh] z-20">
                       <p className="text-[25px] md:text-[35px] font-extrabold text-[#A0C5CC] mt-2 ml-4">
                         {lang(faction.faction.traits[selected_trait].name)}
                       </p>
@@ -90,7 +90,7 @@ export function FactionIntroContent(faction) {
               <InfoBoard faction={faction.faction} type="lord"/>
               <InfoBoard faction={faction.faction} type="soldier"/>
               <InfoBoard faction={faction.faction} type="card"/>
-              <ChunkList chunks={["title","traits","lords","soldiers","cards","bottom"]} type={""}/>
+              <ChunkList chunks={["title","traits","lords","soldiers","cards","bottom"]} type={""} auto_wheel={true}/>
 
             </div>
             <div className="h-40"/>

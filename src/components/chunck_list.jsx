@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export function ChunkList({ chunks, type }) {
+export function ChunkList({ chunks, type,auto_wheel=false,upoffset=-100}) {
   const { t: lang } = useTranslation();
 
   const [activeChunk, setActiveChunk] = useState(null);
@@ -73,10 +73,12 @@ export function ChunkList({ chunks, type }) {
   // 侦听“滚轮事件”，向上滚调到上一个 chunk，向下滚调到下一个 chunk
   useEffect(() => {
     const handleWheel = (e) => {
+        
       if (isThrottled.current) return;
 
       const currentIndex = chunks.findIndex((id) => id === activeChunk);
       if (e.deltaY > 0 && currentIndex < chunks.length - 1) {
+        if(!auto_wheel) return;
         // 向下滚：调到下一个
         const nextId = chunks[currentIndex + 1];
         if(currentIndex === chunks.length - 2)
@@ -88,9 +90,17 @@ export function ChunkList({ chunks, type }) {
             scrollToWithOffset(nextId);
         }
       } else if (e.deltaY < 0 && currentIndex > 0) {
+        if(!auto_wheel) return;
         // 向上滚：调到上一个
         const prevId = chunks[currentIndex - 1];
-        scrollToWithOffset(prevId,-100);
+        if(chunks[currentIndex] === "trait")
+        {
+            scrollToWithOffset(prevId,-200);
+        }
+        else
+        {
+            scrollToWithOffset(prevId,-100);
+        }
       }
 
       // 节流 300ms
@@ -103,7 +113,7 @@ export function ChunkList({ chunks, type }) {
     window.addEventListener("wheel", handleWheel, { passive: true });
     return () => window.removeEventListener("wheel", handleWheel);
   }, [activeChunk, chunks]);
-
+  
   // 计算括号位置的 useLayoutEffect，依赖 activeChunk & menuVisible
   useLayoutEffect(() => {
     if (!activeChunk || !menuVisible) return;
@@ -258,7 +268,7 @@ export function ChunkList({ chunks, type }) {
               >
                 <button
                   ref={(el) => (buttonRefs.current[chunk] = el)}
-                  onClick={() => scrollToWithOffset(chunk)}
+                  onClick={() => scrollToWithOffset(chunk,-100)}
                   className={`relative inline-block text-white text-[25px] ${
                     isActive ? "font-bold" : "font-normal"
                   } py-1 focus:outline-none`}

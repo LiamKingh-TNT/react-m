@@ -28,7 +28,7 @@ export default function RuleContent(){
           </div>
           <p className="mt-[10vh]"/>
           <BackgroundBlur/>
-          <div id="target" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
+          <div id="target" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
             <TitleText
                 text={lang('rule.target.title')}
                 fontSize={60}
@@ -39,15 +39,15 @@ export default function RuleContent(){
                 height={1200}
             />
             <div className=" w-full h-fit relative z-40">
-                <p className="text-[#C4C4C4]">{lang('rule.target.conquer.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.target.conquer.name')}</p>
                 <p className="ml-[5vw]">{lang('rule.target.conquer.desc')}</p>
                 <br/>
-                <p className="text-[#C4C4C4]">{lang('rule.target.annihilation.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.target.annihilation.name')}</p>
                 <p className="ml-[5vw]">{lang('rule.target.annihilation.desc')}</p>
             </div>
           </div>
           <div className="h-150"/>
-          <div id="play" className=" md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[4em] border-y-8 border-[#73979F]">
+          <div id="play" className=" md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[4em] border-y-8 border-[#73979F]">
             <TitleText
                 text={lang('rule.play.title')}
                 fontSize={60}
@@ -58,7 +58,7 @@ export default function RuleContent(){
                 height={1200}
             />
             <div className=" w-full h-fit relative z-40">
-                <p className="text-[#C4C4C4]">{lang('rule.play.init.name')}</p>
+                <p className="text-[#C4C4C4]  text-[30px] font-bold">{lang('rule.play.init.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p>{lang('rule.play.init.desc_1')}</p>
                     <p className="md:ml-[5vw]">{lang('rule.play.init.desc_2')}</p>
@@ -68,7 +68,7 @@ export default function RuleContent(){
                     <p>{lang('rule.play.init.desc_6')}</p>
                 </div>
                 <br/>
-                <p className="text-[#C4C4C4]">{lang('rule.play.game.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.play.game.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p>{lang('rule.play.game.desc_1')}</p>
                     <p>{lang('rule.play.game.desc_2')}</p>
@@ -113,7 +113,7 @@ export default function RuleContent(){
                 </div>
             </div>
           </div>
-          <div id="damage_resolution" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
+          <div id="damage_resolution" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
             <TitleText
                 text={lang('rule.damage_resolution.title')}
                 fontSize={60}
@@ -124,12 +124,12 @@ export default function RuleContent(){
                 height={1200}
             />
             <div className=" w-full h-fit relative z-40">
-                <p className="text-[#C4C4C4]">{lang('rule.damage_resolution.hit_check.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.damage_resolution.hit_check.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.damage_resolution.hit_check.desc_1')}</p>
                     <p className="">{lang('rule.damage_resolution.hit_check.desc_2')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.damage_resolution.damege_calculation.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.damage_resolution.damege_calculation.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.damage_resolution.damege_calculation.desc_1')}</p>
                     <p className="">{lang('rule.damage_resolution.damege_calculation.desc_2')}</p>
@@ -138,7 +138,7 @@ export default function RuleContent(){
                 </div>
             </div>
           </div>
-          <div id="terrain" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
+          <div id="terrain" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
             <TitleText
                 text={lang('rule.terrain.title')}
                 fontSize={60}
@@ -149,33 +149,33 @@ export default function RuleContent(){
                 height={1200}
             />
             <div className=" w-full h-fit relative z-40">
-                <p className="text-[#C4C4C4]">{lang('rule.terrain.general.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.terrain.general.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.terrain.general.desc_1')}</p>
                     <p className="">{lang('rule.terrain.general.desc_2')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.terrain.mountains.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.terrain.mountains.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.terrain.mountains.desc_1')}</p>
                     <p className="">{lang('rule.terrain.mountains.desc_2')}</p>
                     <p className="">{lang('rule.terrain.mountains.desc_3')}</p>
                     <p className="">{lang('rule.terrain.mountains.desc_4')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.terrain.canyon.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.terrain.canyon.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.terrain.canyon.desc_1')}</p>
                     <p className="">{lang('rule.terrain.canyon.desc_2')}</p>
                     <p className="">{lang('rule.terrain.canyon.desc_3')}</p>
                     <p className="">{lang('rule.terrain.canyon.desc_4')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.terrain.water.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.terrain.water.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.terrain.water.desc_1')}</p>
                     <p className="">{lang('rule.terrain.water.desc_2')}</p>
                 </div>
             </div>
           </div>
-          <div id="effects" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[30px] text-start md:px-[8em] border-y-8 border-[#73979F]">
+          <div id="effects" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
             <TitleText
                 text={lang('rule.effects.title')}
                 fontSize={60}
@@ -186,43 +186,43 @@ export default function RuleContent(){
                 height={1200}
             />
             <div className=" w-full h-fit relative z-40">
-                <p className="text-[#C4C4C4]">{lang('rule.effects.rush.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.rush.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.rush.desc_1')}</p>
                     <p className="">{lang('rule.effects.rush.desc_2')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.effects.burn.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.burn.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.burn.desc_1')}</p>
                     <p className="">{lang('rule.effects.burn.desc_2')}</p>
                     <p className="">{lang('rule.effects.burn.desc_3')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.effects.multi_strike.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.multi_strike.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.multi_strike.desc_1')}</p>
                     <p className="">{lang('rule.effects.multi_strike.desc_2')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.effects.teleport.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.teleport.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.teleport.desc_1')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.effects.armor_break.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.armor_break.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.armor_break.desc_1')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.effects.stun.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.stun.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.stun.desc_1')}</p>
                     <p className="">{lang('rule.effects.stun.desc_2')}</p>
                     <p className="">{lang('rule.effects.stun.desc_3')}</p>
                     <p className="">{lang('rule.effects.stun.desc_4')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.effects.exhausted.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.exhausted.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.exhausted.desc_1')}</p>
                     <p className="">{lang('rule.effects.exhausted.desc_2')}</p>
                 </div>
-                <p className="text-[#C4C4C4]">{lang('rule.effects.poison.name')}</p>
+                <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.poison.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
                     <p className="">{lang('rule.effects.poison.desc_1')}</p>
                     <p className="">{lang('rule.effects.poison.desc_2')}</p>
@@ -231,7 +231,7 @@ export default function RuleContent(){
             </div>
           </div>
           <p className="mt-[40vh]"/>
-          <ChunkList chunks={["title","target","play","damage_resolution","terrain","effects","bottom"] } type={"rule"}/>
+          <ChunkList chunks={["title","target","play","damage_resolution","terrain","effects","bottom"] } type={"rule"} upoffset={200}/>
         </div>
     )
 }
