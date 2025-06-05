@@ -27,12 +27,12 @@
             "skills": [
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_1.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skills.skill_1.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_1.skills.skill_2.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skills.skill_2.desc",
                     "cost":2
                 }
             ],
@@ -51,17 +51,17 @@
             "skills": [
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_2.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_2.skills.skill_2.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_2.skills.skill_2.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_2.skills.skill_2.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_2.skills.skill_3.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_2.skills.skill_3.desc",
                     "cost":1
                 }
             ],
@@ -80,17 +80,17 @@
             "skills": [
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_3.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_3.skills.skill_1.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_3.skills.skill_2.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_3.skills.skill_2.desc",
                     "cost":3
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_3.skills.skill_3.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_3.skills.skill_3.desc",
                     "cost":1
                 }
             ],
@@ -109,22 +109,22 @@
             "skills": [
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_1.desc",
                     "cost":0
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_2.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_2.desc",
                     "cost":2
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_3.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_3.desc",
                     "cost":2
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_4.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_4.skills.skill_4.desc",
                     "cost":0
                 }
             ],
@@ -143,27 +143,27 @@
             "skills": [
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_1.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_1.desc",
                     "cost":4
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_2.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_2.desc",
                     "cost":4
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_3.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_3.desc",
                     "cost":5
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_4.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_4.desc",
                     "cost":0
                 },
                 {
                     "name":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_5.name",
-                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.ecclesia_of_luca.soldiers.soldier_5.skills.skill_5.desc",
                     "cost":0
                 }
             ],
