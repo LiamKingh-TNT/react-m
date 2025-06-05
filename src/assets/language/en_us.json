@@ -189,18 +189,108 @@
                     "effect":"At the start of each of your turns, if it is a Sun Year, gain 1 stack of [Imperial Reports].For each stack of [Imperial Reports], gain +2 additional AP. Maximum 5 stacks."
                 }
             },
-            "soldiers": [
-                {
-                    "name":"",
-                    "skills": [
-                        {
-                            "name":"",
-                            "desc":""
+            "soldiers": {
+                "soldier_1":{
+                    "name":"dragon engraved guards",
+                    "skills": {
+                        "skill_1":{
+                            "name":"亢金斬",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"飛龍破",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
+                    "story":""
+                },
+                "soldier_2":{
+                    "name":"Tiger Robe Warrior",
+                    "skills": {
+                        "skill_1":{
+                            "name":"嘯天擊",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"破天錘",
+                            "desc":"",
+                            "cost":"3"
+                        }
+                    },
+                    "story":""
+                },
+                "soldier_3":{
+                    "name":"Golden Dragon Chariot",
+                    "skills": {
+                        "skill_1":{
+                            "name":"金龍穿巷",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"浮沉",
+                            "desc":"",
+                            "cost":"1"
+                        }
+                    },
+                    "story":""
+                },
+                "soldier_4":{
+                    "name":"Shadow Guard",
+                    "skills": {
+                        "skill_1":{
+                            "name":"超速移動",
+                            "desc":"",
+                            "cost":"2"
+                        },
+                        "skill_2":{
+                            "name":"奪魂",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"暗盜",
+                            "desc":"",
+                            "cost":"2"
+                        },
+                        "skill_4":{
+                            "name":"死士",
+                            "desc":"",
+                            "cost":"2"
+                        },
+                        "skill_5":{
+                            "name":"替死",
+                            "desc":"",
+                            "cost":"2"
+                        }
+                    },
+                    "story":""
+                },
+                "soldier_5":{
+                    "name":"Black Banner General",
+                    "skills": {
+                        "skill_1":{
+                            "name":"斬艦刀",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"射日",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_3":{
+                            "name":"智將",
+                            "desc":"",
+                            "cost":"3"
+                        }
+                    },
                     "story":""
                 }
-            ],
+            },
             "lords": {
                 "lord_1":{
                     "name":"The Emperor",

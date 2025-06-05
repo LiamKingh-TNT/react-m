@@ -189,95 +189,197 @@
                 },
                 "trait_2":{
                     "name":"軍陣",
-                    "effect":""
+                    "effect":"可將龍紋甲兵和虎袍力士組成軍陣，依軍陣內兵棋數提升傷害和防禦力。 2：傷害+1、防禦+1 / 3：傷害+2、防禦+1 / 4：傷害+2、防禦+2。組成軍陣的兵棋需保持相連(兩兩距離為1)。每組軍陣內的兵棋上限3人，皂旗將軍加入軍陣可將上限提升至4。組成軍陣的兵棋需一起移動不可分離，移動敏捷為軍陣內兵棋敏捷的平均值(每次移動統一消耗2點行動點)。"
                 },
                 "trait_3":{
                     "name":"肅清",
-                    "effect":""
+                    "effect":"我方對反賊的命中+2。當場上存在反賊時所有單位敏捷+1"
                 }
             },
             "soldiers": {
                 "soldier_1":{
                     "name":"龍紋甲兵",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"亢金斬",
                             "desc":"",
-                            "cost":""
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"飛龍破",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_2":{
                     "name":"虎袍力士",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"嘯天擊",
                             "desc":"",
-                            "cost":""
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"破天錘",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_3":{
                     "name":"金龍戰車",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"金龍穿巷",
                             "desc":"",
-                            "cost":""
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"浮沉",
+                            "desc":"",
+                            "cost":"1"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_4":{
                     "name":"影衛",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"超速移動",
                             "desc":"",
-                            "cost":""
+                            "cost":"2"
+                        },
+                        "skill_2":{
+                            "name":"奪魂",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"暗盜",
+                            "desc":"",
+                            "cost":"2"
+                        },
+                        "skill_4":{
+                            "name":"死士",
+                            "desc":"",
+                            "cost":"2"
+                        },
+                        "skill_5":{
+                            "name":"替死",
+                            "desc":"",
+                            "cost":"2"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_5":{
                     "name":"皂旗將軍",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"斬艦刀",
                             "desc":"",
-                            "cost":""
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"射日",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_3":{
+                            "name":"智將",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 }
             },
             "lords": {
                 "lord_1":{
                     "name":"天帝",
-                    "skills":[
-                        {
-                            "name":"",
-                            "desc":""
+                    "skills": {
+                        "skill_1":{
+                            "name":"勤政",
+                            "desc":"指定一次判定結果。",
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"天外飛星",
+                            "desc":"對指定點放置標記，一回合後對指定點和周圍2格造成10點傷害，必中",
+                            "cost":"1"
+                        },
+                        "skill_3":{
+                            "name":"御駕親征",
+                            "desc":"提升周圍3格內的兵棋3點傷害。",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":"空"
                 },
                 "lord_2":{
                     "name":"雙生土地",
-                    "skills":[
-                        {
-                            "name":"",
-                            "desc":""
+                    "skills": {
+                        "skill_1":{
+                            "name":"豐收",
+                            "desc":"行動點+3",
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"山神之力",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_3":{
+                            "name":"土行術",
+                            "desc":"可以位移到5格內的地形-山峰周圍一格。",
+                            "cost":"3"
+                        },
+                        "skill_4":{
+                            "name":"同生共死",
+                            "desc":"當其中一位土地被擊殺時會在下一輪於還存活的土地身邊復活，只有兩位土地都死亡才會完全死亡。",
+                            "cost":"1"
+                        },
+                        "skill_5":{
+                            "name":"土地賜福",
+                            "desc":"我方單位周圍一格內有地形-山峰時防禦+1",
+                            "cost":"1"
                         }
-                    ],
+                    },
                     "story":"空"
                 }
             },
             "cards": {
                 "card_1":{
-                    "name":"",
+                    "name":"良田滿穗",
+                    "desc":"",
+                    "cost":0
+                },
+                "card_2":{
+                    "name":"國富力強",
+                    "desc":"",
+                    "cost":0
+                },
+                "card_3":{
+                    "name":"借刀殺人",
+                    "desc":"",
+                    "cost":0
+                },
+                "card_4":{
+                    "name":"學富五車",
+                    "desc":"",
+                    "cost":0
+                },
+                "card_5":{
+                    "name":"萬邦來朝",
+                    "desc":"",
+                    "cost":0
+                },
+                "card_6":{
+                    "name":"撒豆成兵",
                     "desc":"",
                     "cost":0
                 }
@@ -299,79 +401,171 @@
             "soldiers": {
                 "soldier_1":{
                     "name":"神恩騎士",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"神聖打擊",
                             "desc":"",
-                            "cost":""
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"聖盾守護",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_2":{
                     "name":"戰爭修女",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"治癒術",
                             "desc":"",
-                            "cost":""
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"神聖禱文",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"聖經錘擊",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_3":{
                     "name":"月光審判者",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"異端指控",
                             "desc":"",
-                            "cost":""
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"異端審判",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"銀光射擊",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_4":{
                     "name":"新月苦修士",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"苦行",
                             "desc":"",
-                            "cost":""
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"神聖鞭笞",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"聖焰灼燒",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_4":{
+                            "name":"聖痕",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_5":{
                     "name":"月神投影",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"聖劍砍擊",
                             "desc":"",
-                            "cost":""
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"聖紋靈矢",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"福音詠唱",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_4":{
+                            "name":"聖軀",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_5":{
+                            "name":"信仰",
+                            "desc":"",
+                            "cost":"1"
                         }
-                    ],
+                    },
                     "story":""
                 }
             },
             "lords": {
                 "lord_1":{
                     "name":"教皇-萊門",
-                    "skills":[
-                        {
-                            "name":"",
-                            "desc":""
+                    "skills": {
+                        "skill_1":{
+                            "name":"聖光術",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"群體治療術",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"聖戰",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_4":{
+                            "name":"十一稅",
+                            "desc":"",
+                            "cost":"1"
                         }
-                    ],
+                    },
                     "story":"空"
                 },
                 "lord_2":{
                     "name":"聖女-露娜",
-                    "skills":[
-                        {
-                            "name":"",
-                            "desc":""
+                    "skills": {
+                        "skill_1":{
+                            "name":"月光射線",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"月神庇佑",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"月神之怒",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_4":{
+                            "name":"聖餐禱告",
+                            "desc":"",
+                            "cost":"1"
                         }
-                    ],
+                    },
                     "story":"空"
                 }
             },
@@ -380,6 +574,31 @@
                     "name":"麵包術",
                     "desc":"額外獲取1D12點行動點",
                     "cost":3
+                },
+                "card_2":{
+                    "name":"祭品",
+                    "desc":"召喚月神投影時替代一個兵棋",
+                    "cost":0
+                },
+                "card_3":{
+                    "name":"神言術",
+                    "desc":"指定一次骰子結果。可在非己方回合發動",
+                    "cost":0
+                },
+                "card_4":{
+                    "name":"真言詛咒",
+                    "desc":"選擇一個玩家丟棄2張他的手牌",
+                    "cost":0
+                },
+                "card_5":{
+                    "name":"獵殺行動",
+                    "desc":"我方單位敏捷+2、傷害+3，持續1回合",
+                    "cost":0
+                },
+                "card_6":{
+                    "name":"感化",
+                    "desc":"控制一個敵方兵棋，持續1回合",
+                    "cost":0
                 }
             }
         },
@@ -389,95 +608,187 @@
           "traits": {
             "trait_1":{
                 "name":"基建",
-                "effect":""
+                "effect":"每回合可消耗行動點，在己方單位周圍1格內召喚太陽能板/戍衛弩炮(每回合至多建造4個基建建築，場上最多存在16個基建建築)"
             }
         },
         "soldiers": {
             "soldier_1":{
                 "name":"屠殺者",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"離子切割",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"風暴射擊",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_2":{
                 "name":"陽焰炮手",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"電漿炮擊",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"電光衝鋒",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_3":{
                 "name":"構築者",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"築城",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"基建",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"碉堡",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_4":{
                 "name":"風暴浮游艇",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"隱匿",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"風暴射擊",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"炙陽導彈",
+                        "desc":"",
+                        "cost":"1"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_5":{
                 "name":"2333高裝甲自走炮",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"高能護盾",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"充能",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"光子集束",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             }
         },
           "lords": {
             "lord_1":{
                 "name":"行星總督-丹尼爾",
-                "skills":[
-                    {
-                        "name":"",
-                        "desc":""
+                "skills": {
+                    "skill_1":{
+                        "name":"行政",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"激勵",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"高速指令",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":"空"
             },
             "lord_2":{
                 "name":"戰爭主腦-薩拉托加",
-                "skills":[
-                    {
-                        "name":"",
-                        "desc":""
+                "skills": {
+                    "skill_1":{
+                        "name":"空襲指令",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"人事調動",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"高維傳送",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_4":{
+                        "name":"最高安保",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":"空"
             }
         },
-          "cards": [
-              {
-                  "name":"",
-                  "desc":"",
-                  "cost":0
-              }
-          ]
+        "cards": {
+            "card_1":{
+                "name":"高功率發電",
+                "desc":"根據場上太陽能板數量，額外獲取相同數量的行動點。必需要在日年才能發動。每回合至多發動一次",
+                "cost":0
+            },
+            "card_2":{
+                "name":"遠程增援",
+                "desc":"下一次召喚兵棋可在任一位置(至少與敵方單位保持3格距離)",
+                "cost":0
+            },
+            "card_3":{
+                "name":"納米蟲災(飢荒)",
+                "desc":"下降2點指定陣營該回合的行動點,持續2回合",
+                "cost":0
+            },
+            "card_4":{
+                "name":"人造太陽",
+                "desc":"將己方設為日年持續兩回合",
+                "cost":0
+            },
+            "card_5":{
+                "name":"迷你黑洞",
+                "desc":"指定一點，將該點周圍5格內的非建築單位向該點移動2格",
+                "cost":0
+            },
+            "card_6":{
+                "name":"EMP炸彈",
+                "desc":"給予指定點與周圍2格內的器械單位暈眩3",
+                "cost":0
+            }
+        }
       },
       "dwarf_forge":{
           "img": "/images/dwarf_forge.png",
@@ -485,7 +796,7 @@
           "traits": {
             "trait_1":{
                 "name":"加速鑄造",
-                "effect":""
+                "effect":"每次進行兵棋召喚時可進行一次1D6難度6的判定，通過則本次召喚不消耗行動點。月年此特性獲得強化，判定改為1D6難度5。"
             },
             "trait_2":{
                 "name":"機械生命",
@@ -495,193 +806,427 @@
           "soldiers": {
             "soldier_1":{
                 "name":"焚滅者",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"焚燒",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"火龍彈",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_2":{
                 "name":"突擊者",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"步槍射擊",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"榴彈炮擊",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"換彈",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_3":{
                 "name":"蓋亞坦克",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"鐵鎚三型爆彈",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"無畏衝鋒",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_4":{
                 "name":"芬尼克斯轟炸機",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"地獄火炸彈",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"火神機炮",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"裕火",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             },
             "soldier_5":{
                 "name":"戰爭泰坦",
-                "skills": [
-                    {
-                        "name":"",
+                "skills": {
+                    "skill_1":{
+                        "name":"雷神導彈 連擊*3",
                         "desc":"",
-                        "cost":""
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"鐵鎚三型爆彈",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"死亡圓鋸",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":""
             }
         },
         "lords": {
             "lord_1":{
                 "name":"大技師-EoM-224573",
-                "skills":[
-                    {
-                        "name":"",
-                        "desc":""
+                "skills": {
+                    "skill_1":{
+                        "name":"改裝",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"超載",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"快速機造",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":"空"
             },
             "lord_2":{
                 "name":"技械冠軍-MoC-1996543",
-                "skills":[
-                    {
-                        "name":"",
-                        "desc":""
+                "skills": {
+                    "skill_1":{
+                        "name":"靈巧操縱",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"自爆指令",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"群體調度(傳送)",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":"空"
             }
         },
-          "cards": [
-              {
-                  "name":"",
-                  "desc":"",
-                  "cost":0
-              }
-          ]
+        "cards": {
+            "card_1":{
+                "name":"機體分裂",
+                "desc":"",
+                "cost":0
+            },
+            "card_2":{
+                "name":"生命憎惡",
+                "desc":"",
+                "cost":0
+            },
+            "card_3":{
+                "name":"電磁暴IV型導彈",
+                "desc":"",
+                "cost":0
+            },
+            "card_4":{
+                "name":"電腦病毒",
+                "desc":"",
+                "cost":0
+            },
+            "card_5":{
+                "name":"光學迷彩",
+                "desc":"",
+                "cost":0
+            },
+            "card_6":{
+                "name":"劇毒迷霧",
+                "desc":"",
+                "cost":0
+            }
+        }
       },
       "crimson_sunchasers":{
           "img": "/images/crimson_sunchasers.png",
           "name": "逐日血魔",
           "traits": {
             "trait_1":{
-                "name":"日焰焚身",
-                "effect":""
+                "name":"逐日",
+                "effect":"在日年所有單位速度+1"
                 },
             "trait_2":{
-                "name":"月下領主",
-                "effect":"在月光階段所有單位速度+1"
+                "name":"焚月",
+                "effect":"在月年，兵棋周圍1格沒有地形時需要進行1D6難度4的判定。若判定失敗則會被賦予[灼燒4]。月年的所有攻擊附帶特效 [灼燒2]"
                 },
             "trait_3":{
                 "name":"血唑",
-                "effect":""
+                "effect":"所有我方單位對敵方單位造成的實質傷害轉變為等量的回復效果。成功傷害單位時+2行動點，成功擊殺時+5行動點。"
                 }
             },
             "soldiers": {
                 "soldier_1":{
                     "name":"渴血者",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"腥臭撲擊",
                             "desc":"",
-                            "cost":""
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"瘋狂",
+                            "desc":"進行傷害時附帶連擊X的效果，但命中-1，持續一回合。X = 1D3 + 1",
+                            "cost":"1"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_2":{
                     "name":"血僕",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"侍奉",
                             "desc":"",
-                            "cost":""
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"獻血",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_3":{
+                            "name":"赤血爪擊",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_3":{
                     "name":"鮮血騎士",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"血色十字斬",
                             "desc":"",
-                            "cost":""
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"血光刺擊",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_3":{
+                            "name":"血裔戰馬",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_4":{
+                            "name":"貴族血脈",
+                            "desc":"不可被控制",
+                            "cost":"3"
+                        },
+                        "skill_5":{
+                            "name":"初擁",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 },
                 "soldier_4":{
                     "name":"腥紅爵士",
-                    "skills": [
-                        {
-                            "name":"",
-                            "desc":"",
-                            "cost":""
-                        }
-                    ],
+                    "skills": {
+                            "skill_1":{
+                                "name":"血液魔法-魅惑",
+                                "desc":"",
+                                "cost":"3"
+                            },
+                            "skill_2":{
+                                "name":"血液魔法-腥紅之槍",
+                                "desc":"",
+                                "cost":"1"
+                            },
+                            "skill_3":{
+                                "name":"血液魔法-血蝠亂舞",
+                                "desc":"",
+                                "cost":"3"
+                            },
+                            "skill_4":{
+                                "name":"貴族血脈",
+                                "desc":"不可被控制",
+                                "cost":"3"
+                            },
+                            "skill_5":{
+                                "name":"初擁",
+                                "desc":"",
+                                "cost":"3"
+                            }
+                        },
                     "story":""
                 },
                 "soldier_5":{
                     "name":"緋色大公",
-                    "skills": [
-                        {
-                            "name":"",
+                    "skills": {
+                        "skill_1":{
+                            "name":"緋紅劍法",
                             "desc":"",
-                            "cost":""
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"血液魔法-深紅凝視",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_3":{
+                            "name":"血液魔法-魅惑",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_4":{
+                            "name":"血液魔法-緋紅爆彈",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_5":{
+                            "name":"貴族血脈",
+                            "desc":"不可被控制",
+                            "cost":"3"
+                        },
+                        "skill_6":{
+                            "name":"威嚴",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_7":{
+                            "name":"初擁",
+                            "desc":"",
+                            "cost":"3"
                         }
-                    ],
+                    },
                     "story":""
                 }
             },
           "lords": {
             "lord_1":{
                 "name":"血祖-艾莉西亞",
-                "skills":[
-                    {
-                        "name":"",
-                        "desc":""
+                "skills": {
+                    "skill_1":{
+                        "name":"拔刀術-血閃",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"神血之槍-突",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"血色擁抱",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_4":{
+                        "name":"真理血眸",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":"空"
             },
             "lord_2":{
                 "name":"鮮血侍女-莉莉絲",
-                "skills":[
-                    {
-                        "name":"",
-                        "desc":""
+                "skills": {
+                    "skill_1":{
+                        "name":"緋色下午茶",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"血色妄想",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"超合金斬艦菜刀",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_4":{
+                        "name":"赤月舞步",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_5":{
+                        "name":"緋紅饗宴",
+                        "desc":"",
+                        "cost":"3"
                     }
-                ],
+                },
                 "story":"空"
             }
         },
-          "cards": [
-              {
-                  "name":"",
-                  "desc":"",
-                  "cost":0
-              }
-          ]
+        "cards": {
+            "card_1":{
+                "name":"血源呼喚",
+                "desc":"傳送2個己方兵棋至領主身邊2格內",
+                "cost":0
+            },
+            "card_2":{
+                "name":"血液魔法-璀璨血晶",
+                "desc":"我方單位受到致命傷害時可發動，使其生命歸0進入凝滯狀態直到血量大於0。凝滯狀態下不可受擊，不可行動，不會死亡。可在敵方回合使用",
+                "cost":0
+            },
+            "card_3":{
+                "name":"血液魔法-赤陽呼喚",
+                "desc":"將該輪設為日年。我方所有單位命中+1，傷害+2。可在敵方回合使用",
+                "cost":0
+            },
+            "card_4":{
+                "name":"血液魔法-百華綻",
+                "desc":"指定一點對其周圍2格內的單位造成傷害。傷害：4 真傷/命中：3/特殊效果：每命中一個敵人就增加1點行動點",
+                "cost":0
+            },
+            "card_5":{
+                "name":"鮮血晚宴",
+                "desc":"回復一個兵棋血量3點。行動點+3",
+                "cost":0
+            },
+            "card_6":{
+                "name":"渴血病",
+                "desc":"指定一名敵方兵棋使其受到詛咒。受詛咒的兵棋每回合都必須成功造成一次傷害(使其他兵棋扣血)，否則自身受到4點真實傷害。受詛咒兵棋可指定任何單位作為目標單位",
+                "cost":0
+            }
+        }
       },
       "alliance_of_ascendants":{
           "img": "/images/alliance_of_ascendants.png",
@@ -697,61 +1242,200 @@
              },
             "trait_3":{
                 "name":"練炁",
-                "effect":""
+                "effect":"初始召喚兵棋等階為0階。每回合選則2枚兵棋等階提升一階，至高4階。生命每提升一階+3。敏捷每提升一階+1。其餘屬性提升依兵棋而異。"
              },
             "trait_4":{
                 "name":"亦正亦邪",
-                "effect":""
+                "effect":"日年召喚的兵棋全都是正道。月年召喚的兵棋全都是邪道。"
              },
             "trait_5":{
                 "name":"集炁",
                 "effect":"每有一個兵棋升階獲得1D2行動點"
              }
             },
-          "soldiers": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "cost":"",
-                  "skills": [
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
-          "lords": [
-              {
-                  "name":"",
-                  "def":0,
-                  "hp":0,
-                  "dex":0,
-                  "size":"",
-                  "type":"",
-                  "skills":[
-                      {
-                          "name":"",
-                          "desc":"",
-                          "cost":""
-                      }
-                  ],
-                  "story":""
-              }
-          ],
-          "cards": [
-              {
-                  "name":"",
-                  "desc":"",
-                  "cost":0
-              }
-          ]
+            "soldiers": {
+                "soldier_1":{
+                    "name":"劍修",
+                    "skills": {
+                        "skill_1":{
+                            "name":"劍氣縱橫",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"萬劍歸宗",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"御劍",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_4":{
+                            "name":"破風",
+                            "desc":"",
+                            "cost":"3"
+                        }
+                    },
+                    "story":""
+                },
+                "soldier_2":{
+                    "name":"法修",
+                    "skills": {
+                        "skill_1":{
+                            "name":"五雷法",
+                            "desc":"",
+                            "cost":"1"
+                        },
+                        "skill_2":{
+                            "name":"布陣",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_3":{
+                            "name":"護身剛炁",
+                            "desc":"",
+                            "cost":"3"
+                        }
+                    },
+                    "story":""
+                },
+                "soldier_3":{
+                    "name":"器修",
+                    "skills": {
+                        "skill_1":{
+                            "name":"如意璽",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"煉器",
+                            "desc":"",
+                            "cost":"1"
+                        }
+                    },
+                    "story":""
+                },
+                "soldier_4":{
+                    "name":"丹修",
+                    "skills": {
+                        "skill_1":{
+                            "name":"煉丹",
+                            "desc":"",
+                            "cost":"2"
+                        }
+                    },
+                    "story":""
+                },
+                "soldier_5":{
+                    "name":"體修",
+                    "skills": {
+                        "skill_1":{
+                            "name":"鐵山靠",
+                            "desc":"",
+                            "cost":"3"
+                        },
+                        "skill_2":{
+                            "name":"隔山打牛",
+                            "desc":"",
+                            "cost":"1"
+                        }
+                    },
+                    "story":""
+                }
+            },
+          "lords": {
+            "lord_1":{
+                "name":"正道盟主-青程劍院院主 林風",
+                "skills": {
+                    "skill_1":{
+                        "name":"青蓮劍歌",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"點化",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"慧眼",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_4":{
+                        "name":"調息",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_5":{
+                        "name":"飛天",
+                        "desc":"",
+                        "cost":"3"
+                    }
+                },
+                "story":"空"
+            },
+            "lord_2":{
+                "name":"邪道盟主-血煞宮宮主 王毅",
+                "skills": {
+                    "skill_1":{
+                        "name":"血煞濁龍槍",
+                        "desc":"",
+                        "cost":"1"
+                    },
+                    "skill_2":{
+                        "name":"血魔追殺令",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_3":{
+                        "name":"飛天",
+                        "desc":"",
+                        "cost":"3"
+                    },
+                    "skill_4":{
+                        "name":"赤血丹",
+                        "desc":"",
+                        "cost":"3"
+                    }
+                },
+                "story":"空"
+            }
+        },
+        "cards": {
+            "card_1":{
+                "name":"祖師救我",
+                "desc":"兵棋即將遭受攻擊時，可以選擇一名等階比他高的己方單位作為守護者與其進行換位，作為守護者的單位敏捷-3，持續1回合",
+                "cost":0
+            },
+            "card_2":{
+                "name":"開悟",
+                "desc":"提升一名兵棋一階",
+                "cost":0
+            },
+            "card_3":{
+                "name":"恭請老祖",
+                "desc":"下次召喚的兵棋提升x階。x為擲骰結果-2",
+                "cost":0
+            },
+            "card_4":{
+                "name":"活祭",
+                "desc":"指定一名兵棋提升X階。X為獻祭兵棋數量",
+                "cost":0
+            },
+            "card_5":{
+                "name":"移山填海",
+                "desc":"放置3個地形",
+                "cost":0
+            },
+            "card_6":{
+                "name":"機緣",
+                "desc":"抽取X張勢力卡。每回合至多發動一次。X=1D3",
+                "cost":0
+            }
+        }
       }
     }
 }
