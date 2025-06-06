@@ -16,28 +16,14 @@ export default function RuleContent(){
     return(
         <div className="content relative z-20 ">
           <div id="title" className="flex items-center justify-center h-[80vh]">
-           <TitleText
-                text={lang('rule.title')}
-                fontSize={100}
-                strokeWidth={40}
-                fill="#3E2F2F"
-                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-                width={1600}
-                height={1200}
-            />
+            <p className="text-[#c24e4e] text-[160px] font-extrabold text-center">{lang('rule.title')}</p>
+        
           </div>
           <p className="mt-[10vh]"/>
           <BackgroundBlur/>
           <div id="target" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
-            <TitleText
-                text={lang('rule.target.title')}
-                fontSize={60}
-                strokeWidth={10}
-                fill="#3E2F2F"
-                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-                width={1600}
-                height={1200}
-            />
+            <p className="text-[#c46969] text-[80px] font-extrabold text-center">{lang('rule.target.title')}</p>
+            
             <div className=" w-full h-fit relative z-40">
                 <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.target.conquer.name')}</p>
                 <p className="ml-[5vw]">{lang('rule.target.conquer.desc')}</p>
@@ -48,15 +34,8 @@ export default function RuleContent(){
           </div>
           <div className="h-150"/>
           <div id="play" className=" md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[4em] border-y-8 border-[#73979F]">
-            <TitleText
-                text={lang('rule.play.title')}
-                fontSize={60}
-                strokeWidth={10}
-                fill="#3E2F2F"
-                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-                width={1600}
-                height={1200}
-            />
+            <p className="text-[#c46969] text-[80px] font-extrabold text-center">{lang('rule.play.title')}</p>
+            
             <div className=" w-full h-fit relative z-40">
                 <p className="text-[#C4C4C4]  text-[30px] font-bold">{lang('rule.play.init.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
@@ -114,15 +93,7 @@ export default function RuleContent(){
             </div>
           </div>
           <div id="damage_resolution" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
-            <TitleText
-                text={lang('rule.damage_resolution.title')}
-                fontSize={60}
-                strokeWidth={10}
-                fill="#3E2F2F"
-                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-                width={1600}
-                height={1200}
-            />
+            <p className="text-[#c46969] text-[80px] font-extrabold text-center">{lang('rule.damage_resolution.title')}</p>
             <div className=" w-full h-fit relative z-40">
                 <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.damage_resolution.hit_check.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
@@ -139,15 +110,8 @@ export default function RuleContent(){
             </div>
           </div>
           <div id="terrain" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
-            <TitleText
-                text={lang('rule.terrain.title')}
-                fontSize={60}
-                strokeWidth={10}
-                fill="#3E2F2F"
-                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-                width={1600}
-                height={1200}
-            />
+            <p className="text-[#c46969] text-[100px] font-extrabold text-center">{lang('rule.terrain.title')}</p>
+            
             <div className=" w-full h-fit relative z-40">
                 <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.terrain.general.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
@@ -176,15 +140,7 @@ export default function RuleContent(){
             </div>
           </div>
           <div id="effects" className="md:ml-[15vw] w-full md:w-[75vw] min-h-fit relative z-20 text-white text-[25px] text-start md:px-[8em] border-y-8 border-[#73979F]">
-            <TitleText
-                text={lang('rule.effects.title')}
-                fontSize={60}
-                strokeWidth={10}
-                fill="#3E2F2F"
-                strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-                width={1600}
-                height={1200}
-            />
+            <p className="text-[#c46969] text-[100px] font-extrabold text-center">{lang('rule.effects.title')}</p>
             <div className=" w-full h-fit relative z-40">
                 <p className="text-[#C4C4C4] text-[30px] font-bold">{lang('rule.effects.rush.name')}</p>
                 <div className="ml-[5vw] flex flex-col gap-5">
