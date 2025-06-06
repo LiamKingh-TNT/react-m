@@ -7,6 +7,9 @@ import FactionIntro from './pages/faction_intro';
 import Rules from './pages/rules';
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
 import ScrollToTop from './components/ScrollToTop';
+import { feedFactions } from './api/fireStore';
+
+//feedFactions();
 
 function App() {
 

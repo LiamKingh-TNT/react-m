@@ -5,6 +5,7 @@
     "name": "factions.ecclesia_of_luca.name",
     "groupe":"selenyx",
     "color":"d19f14",
+    "likes":0,
     "traits": [
         {
             "name":"factions.ecclesia_of_luca.traits.trait_1.name",

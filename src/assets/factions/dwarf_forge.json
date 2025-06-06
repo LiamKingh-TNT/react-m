@@ -5,6 +5,7 @@
     "name": "factions.dwarf_forge.name",
     "groupe":"selenyx",
     "color":"d19f14",
+    "likes":0,
     "traits": [
         {
             "name":"factions.dwarf_forge.traits.trait_1.name",
