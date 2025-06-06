@@ -18,7 +18,7 @@ function Intro() {
   return (
         <div className="content relative z-20 ">
           <div className="flex items-center justify-center  h-[80vh]">
-            <p className='text-[#A0C5CC] text-[50px] md:text-[100px] font-extrabold'>
+            <p className=' text-[#A0C5CC] text-[50px] md:text-[100px] font-extrabold'>
               {lang('title')}
             </p>
           </div>

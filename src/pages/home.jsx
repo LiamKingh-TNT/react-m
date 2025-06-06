@@ -4,6 +4,7 @@ import Footer from '@/components/footer'
 import Intro from '@/components/intro'
 import CartSummery from '@/components/cart_summery'
 function MainPage() {
+
   return (
     <div className="container mx-auto max-w-none w-full px-0">
       <Header/>
