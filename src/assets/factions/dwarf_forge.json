@@ -28,12 +28,12 @@
             "skills": [
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_1.skills.skill_1.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_1.skills.skill_1.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_1.skills.skill_2.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_1.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_1.skills.skill_2.desc",
                     "cost":2
                 }
             ],
@@ -52,17 +52,17 @@
             "skills": [
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_2.skills.skill_1.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_2.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_2.skills.skill_1.desc",
                     "cost":0
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_2.skills.skill_2.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_2.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_2.skills.skill_2.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_2.skills.skill_3.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_2.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_2.skills.skill_3.desc",
                     "cost":1
                 }
             ],
@@ -81,12 +81,12 @@
             "skills": [
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_3.skills.skill_1.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_3.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_3.skills.skill_1.desc",
                     "cost":2
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_3.skills.skill_2.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_3.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_3.skills.skill_2.desc",
                     "cost":1
                 }
             ],
@@ -105,17 +105,17 @@
             "skills": [
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_4.skills.skill_1.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_4.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_4.skills.skill_1.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_4.skills.skill_2.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_4.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_4.skills.skill_2.desc",
                     "cost":1
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_4.skills.skill_3.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_4.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_4.skills.skill_3.desc",
                     "cost":0
                 }
             ],
@@ -134,17 +134,17 @@
             "skills": [
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_5.skills.skill_1.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_5.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_5.skills.skill_1.desc",
                     "cost":4
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_5.skills.skill_2.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_5.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_5.skills.skill_2.desc",
                     "cost":2
                 },
                 {
                     "name":"factions.dwarf_forge.soldiers.soldier_5.skills.skill_3.name",
-                    "desc":"factions.dwarf_forge.soldiers.soldier_5.skill_1.desc",
+                    "desc":"factions.dwarf_forge.soldiers.soldier_5.skills.skill_3.desc",
                     "cost":0
                 }
             ],
