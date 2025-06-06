@@ -18,15 +18,9 @@ function Intro() {
   return (
         <div className="content relative z-20 ">
           <div className="flex items-center justify-center  h-[80vh]">
-            <TitleText
-              text={lang('title')}
-              fontSize={100}
-              strokeWidth={40}
-              fill="#3E2F2F"
-              strokeColors={["#A0C5CC", "#ffffff", "#A0C5CC"]}
-              width={1600}
-              height={1200}
-            />
+            <p className=' text-[#A0C5CC] text-[50px] md:text-[100px] font-extrabold'>
+              {lang('title')}
+            </p>
           </div>
           <p className="mt-[10vh]"/>
           <BackgroundBlur/>

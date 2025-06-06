@@ -5,6 +5,7 @@
     "name": "factions.crimson_sunchasers.name",
     "groupe":"chaos",
     "color":"d19f14",
+    "likes":0,
     "traits": [
         {
             "name":"factions.crimson_sunchasers.traits.trait_1.name",

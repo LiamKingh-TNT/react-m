@@ -16,7 +16,7 @@ export function FactionIntroContent(faction) {
     const handleMouseEnter = (index) => {
       gsap.to(btnRefs.current[index], {
         height: '55px',
-        y:'-25px',
+        y:'-15px',
         duration: 0.3,
         ease: 'power2.out',
       });
@@ -25,7 +25,7 @@ export function FactionIntroContent(faction) {
     const handleMouseLeave = (index) => {
       gsap.to(btnRefs.current[index], {
         height: '40px',
-        y:'-10px',
+        y:'-0px',
         duration: 0.3,
         ease: 'power2.out',
       });
@@ -74,7 +74,7 @@ export function FactionIntroContent(faction) {
                     })}
                   </div>
 
-                    <div className="bg-[#815A5A]/50 border-8 border-[#73979F] row-start-2 col-span-9 p-4 h-fit min-h-[50vh] z-20">
+                    <div className="bg-[#815A5A]/50 border-8 mt-2 border-[#73979F] row-start-2 col-span-9 p-4 h-fit min-h-[50vh] z-20">
                       <p className="text-[25px] md:text-[35px] font-extrabold text-[#A0C5CC] mt-2 ml-4">
                         {lang(faction.faction.traits[selected_trait].name)}
                       </p>

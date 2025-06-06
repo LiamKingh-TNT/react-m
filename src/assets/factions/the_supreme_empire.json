@@ -5,6 +5,7 @@
     "name": "factions.the_supreme_empire.name",
     "groupe":"solaris",
     "color":"b98d11",
+    "likes":0,
     "traits": [
         {
             "name":"factions.the_supreme_empire.traits.trait_1.name",

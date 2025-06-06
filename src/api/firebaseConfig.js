@@ -12,7 +12,7 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APPID,
   measurementId: "G-TDEFPL72L5"
 };
-
+console.log("🔧 firebaseConfig:", firebaseConfig);
 
 const appLength = getApps().length > 0;
 // Initialize Firebase

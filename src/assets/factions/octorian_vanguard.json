@@ -4,7 +4,8 @@
     "background_img": "/images/octorian_vanguard_background.png",
     "name": "factions.octorian_vanguard.name",
     "groupe":"solaris",
-    "color":"d19f14",
+    "color":"4f8bb1",
+    "likes":0,
     "traits": [
         {
             "name":"factions.octorian_vanguard.traits.trait_1.name",
