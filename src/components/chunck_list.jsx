@@ -84,7 +84,7 @@ export function ChunkList({ chunks, type, auto_wheel = false, upoffset = -100 })
       if (isThrottled.current) return;
 
       const currentIndex = chunks.findIndex((id) => id === activeChunk);
-      if (e.deltaY > 0 && currentIndex < chunks.length - 1) {
+      /*if (e.deltaY > 0 && currentIndex < chunks.length - 1) {
         if (!auto_wheel) return;
         // 向下滚：调到下一个
         const nextId = chunks[currentIndex + 1];
@@ -102,7 +102,7 @@ export function ChunkList({ chunks, type, auto_wheel = false, upoffset = -100 })
         } else {
           scrollToWithOffset(prevId, -100);
         }
-      }
+      }*/
 
       // 节流 300ms
       isThrottled.current = true;
