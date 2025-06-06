@@ -119,9 +119,9 @@ function Header() {
             <img src="/images/main_icon.png" alt="main_icon" className="w-40 h-40 relative z-[50]" />
           </Link>
           <nav className="hidden ml-5 md:flex gap-8 text-white text-[20px]">
-            <Link to="/story" className="nav-underline-center select-none">
+            {/*<Link to="/story" className="nav-underline-center select-none">
               {lang('menu.background')}
-            </Link>
+            </Link>*/}
             <Link to="/faction" className="nav-underline-center select-none">
               {lang('menu.component')}
             </Link>
@@ -153,10 +153,10 @@ function Header() {
         style={{ height: 0, opacity: 0, overflow: 'hidden', display: 'none' }}
         className="fixed list top-[100px] left-0 w-screen z-0 text-white text-[25px] py-4 px-6 shadow-md space-y-4 text-center md:hidden"
       >
-        <Link to="/story" className="block mt-[40px]">
+        {/*<Link to="/story" className="block mt-[40px]">
           {lang('menu.background')}
-        </Link>
-        <Link to="/faction" className="block">
+        </Link>*/}
+        <Link to="/faction" className="block mt-[40px]">
           {lang('menu.component')}
         </Link>
         <Link to="/rules" className="block">
