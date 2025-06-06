@@ -239,35 +239,35 @@
         },
         {
             "name":"factions.the_supreme_empire.cards.card_2.name",
-            "desc":"factions.the_supreme_empire.cards.card_1.desc",
+            "desc":"factions.the_supreme_empire.cards.card_2.desc",
             "img":"/images/card_silhouette.png",
             "head_img":"/images/default_avatar.png",
             "cost":3
         },
         {
             "name":"factions.the_supreme_empire.cards.card_3.name",
-            "desc":"factions.the_supreme_empire.cards.card_1.desc",
+            "desc":"factions.the_supreme_empire.cards.card_3.desc",
             "img":"/images/card_silhouette.png",
             "head_img":"/images/default_avatar.png",
             "cost":3
         },
         {
             "name":"factions.the_supreme_empire.cards.card_4.name",
-            "desc":"factions.the_supreme_empire.cards.card_1.desc",
+            "desc":"factions.the_supreme_empire.cards.card_4.desc",
             "img":"/images/card_silhouette.png",
             "head_img":"/images/default_avatar.png",
             "cost":2
         },
         {
             "name":"factions.the_supreme_empire.cards.card_5.name",
-            "desc":"factions.the_supreme_empire.cards.card_1.desc",
+            "desc":"factions.the_supreme_empire.cards.card_5.desc",
             "img":"/images/card_silhouette.png",
             "head_img":"/images/default_avatar.png",
             "cost":2
         },
         {
             "name":"factions.the_supreme_empire.cards.card_6.name",
-            "desc":"factions.the_supreme_empire.cards.card_1.desc",
+            "desc":"factions.the_supreme_empire.cards.card_6.desc",
             "img":"/images/card_silhouette.png",
             "head_img":"/images/default_avatar.png",
             "cost":1
